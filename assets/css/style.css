@@ -23,15 +23,14 @@
 }
 
 /*------------------------------
-        ESTILIZAÇÃO DO MENU
+        ESTILIZAÃƒâ€¡ÃƒÆ’O DO MENU
 ----------------------------------*/
 .header {
-    height: 90px;
     box-shadow: 0px 4px 10px #d9d9d9;
 }
 
 .header__menu {
-    height: 90px;
+    padding: 15px 0;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -75,12 +74,10 @@
 
 
 /* ---------------------------
-       Estilização do BANNER
+       EstilizaÃƒÂ§ÃƒÂ£o do BANNER
 -------------------------------- */
 
 .slider {
-    height: 600px;
-    width: 100%;
     background: url("../img/bn.png") no-repeat right bottom;
     background-size: 400px 600px;
     border-bottom: 2px solid #daa250;
@@ -118,7 +115,7 @@
 }
 
 /* ---------------------------
-       Estilização da LINHAS
+       EstilizaÃƒÂ§ÃƒÂ£o da LINHAS
 -------------------------------- */
 
 .linhas__header {
@@ -160,10 +157,8 @@
     justify-content: space-around;
     width: 360px;
     height: 285px;
+    border: 2px solid #eeeeee;
     border-top: 2px solid #daa250;
-    border-bottom: 2px solid #eeeeee;
-    border-right: 2px solid #eeeeee;
-    border-left: 2px solid #eeeeee;
 }
 
 .linhas__card p {
@@ -200,7 +195,7 @@
 }
 
 /* ---------------------------
-       CONHEÇA A FACELOOK
+       CONHEÃƒâ€¡A A FACELOOK
 -------------------------------- */
 
 .facelook {
@@ -209,43 +204,40 @@
 }
 
 .facelook__wrapper {
-    height: 580px;
+    padding: 130px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .facelook__video {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    height: 290px;
     width: 540px;
+    position: relative;
 }
 
 .facelook__video a {
-    z-index: 1;
+    position: absolute;
 }
 
 .video {
-    position: absolute;
-    top: 0;
-    z-index: 0;
     border: 2px solid #daa250;
+    width: 100%;
 }
 
 .facelook__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 275px;
+    /* height: 275px; */
 }
 
 .facelook__content h2 {
     color: #daa250;
     font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .facelook__content p {
@@ -254,17 +246,18 @@
     line-height: 26px;
     max-width: 460px;
     margin-left: 15px;
+    padding-left: 15px;
+    border-left: 5px solid #daa250;
 }
 
 .content__barra {
     display: flex;
     align-items: center;
-    height: 123px;
     position: relative;
 }
 
 .facelook__content p::before {
-    content: '';
+    /* content: ''; */
     display: inline-block;
     width: 5px;
     left: 0;
@@ -278,9 +271,9 @@
     display: flex;
     align-items: center;
     color: #daa250;
-    width: 160px;
     text-decoration: none;
     font-size: 16px;
+    margin-top: 45px;
 }
 
 .facelook__content img {
