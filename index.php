@@ -26,8 +26,8 @@
                 <a class="btn menu__btn" href="#">Revender</a>
             </div>
             <!-- MENU IDIOMAS -->
-            <nav>
-                <a href="#">PT</a>
+            <nav class="nav__linguas">
+                <a class="linguas__pt" href="#">PT</a>
                 <div>
                     <a href=""></a>
                     <a href=""></a>
@@ -35,7 +35,6 @@
             </nav>
         </nav>
 	</header>
-	
 
     <main>
         <!-- SLIDER -->
@@ -64,9 +63,9 @@
                             <img src="assets/icons/cabelo.svg" width="80"/>
                         </div>
                         <div>
-                            <h4>Feminina</h4>
-                            <p>Os produtos da linha feminina são feitos com todo cuidado em prol de sempre manter o bem estar de seu couro cabeludo.</p>
-                            <a href="#">ver mais</a>
+                            <h4 class="linhas__subtitulo">Feminina</h4>
+                            <p class="linhas__paragrafo">Os produtos da linha feminina são feitos com todo cuidado em prol de sempre manter o bem estar de seu couro cabeludo.</p>
+                            <a class="linhas__link" href="#">ver mais</a>
                         </div>
                     </div>
                 <!-- CARD -->
@@ -75,9 +74,9 @@
                             <img src="assets/icons/bigode.svg" width="100"/>
                         </div>
                         <div>
-                        <h4>Masculina</h4>
-                            <p>Os produtos da linha masculina são feitos para os cortes mais estilosos e tambem para as diferentes barbas.</p>
-                            <a href="#">ver mais</a>
+                        <h4 class="linhas__subtitulo">Masculina</h4>
+                            <p class="linhas__paragrafo">Os produtos da linha masculina são feitos para os cortes mais estilosos e tambem para as diferentes barbas.</p>
+                            <a class="linhas__link" href="#">ver mais</a>
                         </div>
                     </div>
                 <!-- CARD -->
@@ -86,42 +85,44 @@
                             <img src="assets/icons/medalha.svg" width="80"/>
                         </div>
                         <div>
-                        <h4>Premium</h4>
-                            <p>A linha premium é voltada para os produtos mais diferenciados e mais interessantes para todos os generos.</p>
-                            <a href="#">ver mais</a>
+                        <h4 class="linhas__subtitulo">Premium</h4>
+                            <p class="linhas__paragrafo">A linha premium é voltada para os produtos mais diferenciados e mais interessantes para todos os generos.</p>
+                            <a class="linhas__link" href="#">ver mais</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- CONHEÇA A FACELOOK -->
         <section class="facelook">
             <div class="wrapper facelook__wrapper">
                 <div class="facelook__video">
                     <img class="video" src="assets/img/video.png" width="540" height="305">
-                    <a href="#">
+                    <a class="facelook__player" href="#">
                         <img src="assets/icons/player.svg" width="98">
                     </a>
                 </div>
                 <div class="facelook__content">
-                    <h2>Conheça a facelook</h2>
+                    <h2 class="facelook__titulo">Conheça a facelook</h2>
                     <div class="content__barra">
-                        <p>Surgimos em 2013 com o intuito de fazer a diferença no mercado de cosmeticos e nossa missão é disponibilizar os melhores produtos e aprimorar cada vez mais os nossos  serviços, gerando veiculos fortes e duradourosb com clientes e consumidores</p>
+                        <p class="facelook__paragrafo">Surgimos em 2013 com o intuito de fazer a diferença no mercado de cosmeticos e nossa missão é disponibilizar os melhores produtos e aprimorar cada vez mais os nossos  serviços, gerando veiculos fortes e duradourosb com clientes e consumidores</p>
                     </div>
 
-                    <a href="#">
-                        <img src="assets/icons/player.svg" width="18"/>
+                    <a class="facelook__link" href="#">
+                        <img class="facelook__img" src="assets/icons/player.svg" width="18"/>
                         Veja o nosso canal
                     </a>
                 </div>
             </div>
         </section>
+
         <!-- LIGA DOS BARBER -->
         <section class="barber">
             <div class="wrapper barber__wrapper">
                 <header class="barber__cabecalho">
-                    <h2>Conheça a liga dos barber </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat totam officiis quaerat aperiam impedit error quasi maiores sapiente corrupti nemo libero ullam, doloremque tempora dolore temporibus nulla doloribus at obcaecati?</p>
+                    <h2 class="barber__titulo">Conheça a liga dos barber </h2>
+                    <p class="barber__paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat totam officiis quaerat aperiam impedit error quasi maiores sapiente corrupti nemo libero ullam, doloremque tempora dolore temporibus nulla doloribus at obcaecati?</p>
                 </header>
                 <!-- AREA BARBEIROS -->
                 <div class="barber__fotos">
@@ -213,19 +214,20 @@
                     <!-- FIM AREA BARBEIROS -->
             </div>
         </section>
+
             <!-- NEWSLETTER -->
-            <section class="news">
-                <!-- AREA CONTEUDO NEWSLETTER -->
-                <div class="wrapper news__content">
-                    <div class="news__info">
-                        <h2>Novidades</h2>
-                        <p>Envie-nos seu e-mail e fique por dentro de todas as novidades e receba promoções.</p>
-                    </div>
-                    <div class="news__form">
-                        <input type="text" name="newsletter" placeholder="Seu melhor e-mail">
-                        <button>Enviar</button>
-                    </div>
+        <section class="news">
+            <!-- AREA CONTEUDO NEWSLETTER -->
+            <div class="wrapper news__content">
+                <div class="news__info">
+                    <h2 class="news__titulo">Novidades</h2>
+                    <p class="news__paragrafo">Envie-nos seu e-mail e fique por dentro de todas as novidades e receba promoções.</p>
                 </div>
+                <div class="news__form">
+                    <input type="text" name="newsletter" placeholder="Seu melhor e-mail">
+                    <button>Enviar</button>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -265,28 +267,46 @@
                 </div>
             </div>
         </section>
+
         <!-- AREA REDES SOCIAIS -->
         <div class="redes">
             <nav class="wrapper redes__nav">
-                <a href="">F</a>
-                <a href="">T</a>
-                <a href="">I</a>
-                <a href="">Y</a>
+                <a class="redes__items" href="">F</a>
+                <a class="redes__items" href="">T</a>
+                <a class="redes__items" href="">I</a>
+                <a  class="redes__items" href="">Y</a>
             </nav>
         </div>
     </main>
+
     <!-- FOOTER -->
-    <footer class="rodape">
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div>
-        <div>
-            <p>Facelook 2019</p>
+    <footer class="rodape wrapper">
+
+        <div class="rodape__news">
+            <h2 class="novidades__titulo">Novidades</h2>
+            <p class="novidades__text">Envie-nos seu melhore e-mail e fique por dentro de todas as novidades</p>
+            <form  class="novidades__form">
+                <input class="novidades__input" placeholder="Seu melhor e-mail" type="text" />
+                <input class="novidades__button" type="submit" value="Enviar"/>
+            </form>
         </div>
-    </div>
-</footer>
+
+        <nav class="rodape__menu">
+            <a class="rodape__item" href="">home</a>
+            <a class="rodape__item" href="">parceiros</a>
+            <a class="rodape__item" href="">produtos</a>
+            <a class="rodape__item" href="">blog</a>
+        </nav>
+
+        <div class="rodape__contato">
+            <h2 class="contatos">Contatos</h2>
+            <p class="contato__items rodape__endereco">R. Jonhson's Baby - 235</p>
+            <p class="contato__items rodape__tel">99999-9999</p>
+        </div>
+
+        <div class="rodape__copy wrapper">
+            <p>Copyright C2019 Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
