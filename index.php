@@ -1,42 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Facelook - Cosméticos</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-    <!-- HEADER -->
-    <header class="header">
-    <!-- NAVEGAÇÃO -->
-        <nav class="wrapper header__menu">
-            <!-- LOGO -->
-            <h1 class="nav__brand">
-                <a class="brand" href="">
-                    Facelook cosméticos
-                </a>
-            </h1>
-            <!-- ITEMS MENU -->
-            <div class="nav__menu">
-                <a class="menu__item" href="#">Home</a>
-                <a class="menu__item" href="#">Produtos</a>
-                <a class="menu__item" href="#">Blog</a>
-                <a class="btn menu__btn" href="#">Revender</a>
-            </div>
-            <!-- MENU IDIOMAS -->
-            <nav class="nav__linguas">
-                <a class="linguas__pt" href="#">PT</a>
-                <div>
-                    <a href=""></a>
-                    <a href=""></a>
-                </div>
-            </nav>
-        </nav>
-	</header>
+<?php include('header.php'); ?>
 
-    <main>
+<main>
         <!-- SLIDER -->
         <section class="sectionSlider">
             <div class="slider">
@@ -277,36 +241,6 @@
                 <a  class="redes__items" href="">Y</a>
             </nav>
         </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="rodape wrapper">
-
-        <div class="rodape__news">
-            <h2 class="novidades__titulo">Novidades</h2>
-            <p class="novidades__text">Envie-nos seu melhore e-mail e fique por dentro de todas as novidades</p>
-            <form  class="novidades__form">
-                <input class="novidades__input" placeholder="Seu melhor e-mail" type="text" />
-                <input class="novidades__button" type="submit" value="Enviar"/>
-            </form>
-        </div>
-
-        <nav class="rodape__menu">
-            <a class="rodape__item" href="">home</a>
-            <a class="rodape__item" href="">parceiros</a>
-            <a class="rodape__item" href="">produtos</a>
-            <a class="rodape__item" href="">blog</a>
-        </nav>
-
-        <div class="rodape__contato">
-            <h2 class="contatos">Contatos</h2>
-            <p class="contato__items rodape__endereco">R. Jonhson's Baby - 235</p>
-            <p class="contato__items rodape__tel">99999-9999</p>
-        </div>
-
-        <div class="rodape__copy wrapper">
-            <p>Copyright C2019 Todos os direitos reservados</p>
-        </div>
-    </footer>
-</body>
-</html>
+	</main>
+	
+	<?php include('footer.php'); ?>

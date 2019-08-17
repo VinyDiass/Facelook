@@ -1,0 +1,22 @@
+.wrapper {
+    max-width: 1140px;
+	margin: 0 auto;
+	width: 85%;
+}
+
+.btn {
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisoria--amarela {
+	border: 3px solid #daa250;
+	margin: 20px 0;
+}
+
+

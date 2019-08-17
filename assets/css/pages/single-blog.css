@@ -1,0 +1,38 @@
+.cabecalho__post {
+	padding: 50px 0 10px;
+}
+
+.titulo__post {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.subtitulo__post {
+    font-size: 22px;
+    font-weight: 300;
+    color: #6b6b6b;
+    margin: 10px 0;
+}
+
+.autor__post {
+    font-weight: 300;
+    color: #6b6b6b;
+    margin: 25px 0 10px;
+}	
+
+.data__post {
+    font-weight: 300;
+    color: #464545;
+}
+
+.banner__post {
+	height: 550px;
+	background-color: #000;
+	margin: 10px 0;
+}
+
+.artigo__post p {
+	margin: 25px 0;
+	line-height: 1.5;
+}

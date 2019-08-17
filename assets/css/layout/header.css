@@ -1,0 +1,65 @@
+/*------------------------------
+        ESTILIZACAO DO MENU
+----------------------------------*/
+.header {
+    box-shadow: 0px 4px 10px #d9d9d9;
+}
+
+.header__menu {
+    padding: 15px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.brand {
+    display: block;
+    text-indent: -9999px;
+	background: url("../../icons/logo.svg") no-repeat;
+    width: 180px;
+    height: 50px;
+    background-size: 180px 50px;
+}
+
+.menu__item {
+    text-transform: uppercase;
+    margin-left: 35px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+.menu__item:nth-child(1) {
+    color: #daa250;
+}
+
+.menu__item:nth-child(3) {
+    margin-right: 10px;
+}
+
+.menu__btn {
+    margin-left: 70px;
+    border: 2px solid #daa250;
+    border-radius: 5px;
+    color: #daa250;
+    box-shadow: 0px 0px 10px #d6ba91;
+}
+
+.linguas__pt {
+    text-decoration: none;
+    color: #444;
+}
+
+.linguas__pt::after {
+    content: '';
+    display: inline-block;
+    background: url('../img/jorgin.png') no-repeat;
+    padding: 0 10px;
+    margin: 0 10px;
+    background-size: 10px 10px;
+    widows: 10px;
+    height: 10px;
+}

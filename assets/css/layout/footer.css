@@ -1,0 +1,120 @@
+/* ---------------------------
+            FOOTER
+-------------------------------- */
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.novidades__titulo {
+    font-size: 1.87rem;
+    font-weight: 100;
+    color: #222222;
+}
+
+.novidades__titulo::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 90px;
+    background: #daa250;
+    margin-top:10px;
+}
+
+.novidades__text {
+    font-size: 0.87rem;
+    color: #444;
+    max-width: 350px;
+    padding: 10px 0;
+}
+
+.novidades__form {
+    display: flex;
+}
+
+.novidades__input {
+    height: 45px;
+    border: 2px solid #daa250;
+    font-size: 1rem;
+    color: #666;
+}
+
+.novidades__input, .novidades__button {
+    outline: 0;
+}
+
+.novidades__button {
+    color: #fff;
+    font-size: 1rem;
+    background-color: #daa250;
+    border: none;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.rodape__menu {
+    max-width: 500px;
+    display: flex;
+}
+
+.rodape__item {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 100;
+    margin: 0 10px;
+}
+
+.rodape__item:nth-child(1)::after {
+    content:'';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #daa250;
+    margin-top: 5px;
+}
+
+.contato__items{
+    font-size: 0.8rem;
+    padding: 5px 0;
+}
+
+.rodape__endereco::before {
+    content: '';
+    display: inline-block;
+    background: url('../img/jorgin.png') no-repeat;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.rodape__tel::before {
+    content: '';
+    display: inline-block;
+    background: url('../img/jorgin.png') no-repeat;
+    background-size: 10px 10px;
+    width: 10px;
+    height: 10px;
+}
+
+.rodape__news, .rodape__menu, .rodape__contato {
+    padding: 30px 0;
+}
+
+.contatos {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: #daa250;
+}
+
+.rodape__copy {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    color: #666;
+    font-size: 1.1rem;
+}
