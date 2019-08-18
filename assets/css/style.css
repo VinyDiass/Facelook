@@ -2,5 +2,6 @@
 @import 'base/utilitaries.css';
 @import 'layout/header.css';
 @import 'pages/home.css';
+@import 'pages/blog.css';
 @import 'pages/single-blog.css';
 @import 'layout/footer.css';
