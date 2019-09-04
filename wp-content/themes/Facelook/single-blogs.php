@@ -16,7 +16,7 @@
 		<h2 class="subtitulo__post">Aprenda a cuidar melhor do seu cabelo com dicas rápidas e caseiras para colocar em prática sua revolução capilar.</h2>
 		<h4 class="autor__post">Por Viny Dias, Facelook</h4>
 		<div>
-			<h4 class="data__post">13/08/2019 21:07</h4>
+			<h4 class="data__post"><?php The_date('d/m/Y'); ?></h4>
 			<nav>
 				<a href="#"></a>
 				<a href="#"></a>

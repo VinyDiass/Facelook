@@ -15,15 +15,15 @@
         <nav class="wrapper header__menu">
             <!-- LOGO -->
             <h1 class="nav__brand">
-                <a class="brand" href="<?php home_url();?>/home">
+                <a class="brand" href="<?php home_url();?>/Facelook/home">
                     Facelook cosméticos
                 </a>
             </h1>
             <!-- ITEMS MENU -->
             <div class="nav__menu">
-                <a class="menu__item" href="<?php home_url();?>/home">Home</a>
+                <a class="menu__item" href="<?php home_url();?>/Facelook/home">Home</a>
                 <a class="menu__item" href="#">Produtos</a>
-                <a class="menu__item" href="<?php home_url(); ?>/blog">Blog</a>
+                <a class="menu__item" href="<?php home_url(); ?>/Facelook/blog">Blog</a>
                 <a class="btn menu__btn" href="#">Revender</a>
             </div>
             <!-- MENU IDIOMAS -->

@@ -28,7 +28,7 @@
                 <!-- CARD -->
                     <div class="linhas__card">
                         <div class="linhas__cabelofeminino">
-                            <img src="assets/icons/cabelo.svg" width="80"/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/cabelo.svg" width="80"/>
                         </div>
                         <div>
                             <h4 class="linhas__subtitulo">Feminina</h4>
@@ -39,7 +39,7 @@
                 <!-- CARD -->
                     <div class="linhas__card">
                         <div class="linhas__bigode">
-                            <img src="assets/icons/bigode.svg" width="100"/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bigode.svg" width="100"/>
                         </div>
                         <div>
                         <h4 class="linhas__subtitulo">Masculina</h4>
@@ -50,7 +50,7 @@
                 <!-- CARD -->
                     <div class="linhas__card">
                         <div class="linhas__medalha">
-                            <img src="assets/icons/medalha.svg" width="80"/>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/medalha.svg" width="80"/>
                         </div>
                         <div>
                         <h4 class="linhas__subtitulo">Premium</h4>
@@ -66,9 +66,9 @@
         <section class="facelook">
             <div class="wrapper facelook__wrapper">
                 <div class="facelook__video">
-                    <img class="video" src="assets/img/video.png" width="540" height="305">
+                    <img class="video" src="<?php echo get_template_directory_uri(); ?>/assets/img/video.png" width="540" height="305">
                     <a class="facelook__player" href="#">
-                        <img src="assets/icons/player.svg" width="98">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/player.svg" width="98">
                     </a>
                 </div>
                 <div class="facelook__content">
@@ -78,7 +78,7 @@
                     </div>
 
                     <a class="facelook__link" href="#">
-                        <img class="facelook__img" src="assets/icons/player.svg" width="18"/>
+                        <img class="facelook__img" src="<?php echo get_template_directory_uri(); ?>/assets/icons/player.svg" width="18"/>
                         Veja o nosso canal
                     </a>
                 </div>
@@ -89,7 +89,7 @@
         <section class="barber">
             <div class="wrapper barber__wrapper">
                 <header class="barber__cabecalho">
-                    <h2 class="barber__titulo">Conheça a liga dos barber </h2>
+                    <h2 class="barber__titulo">Conheça a Liga dos Barber </h2>
                     <p class="barber__paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat totam officiis quaerat aperiam impedit error quasi maiores sapiente corrupti nemo libero ullam, doloremque tempora dolore temporibus nulla doloribus at obcaecati?</p>
                 </header>
                 <!-- AREA BARBEIROS -->
@@ -101,7 +101,7 @@
                             <h5></h5>
                             <p></p>
                             <nav>
-                                <a href=""></a>
+                                <a href="http://www.google.com.br"></a>
                                 <a href=""></a>
                                 <a href=""></a>
                                 <a href=""></a>

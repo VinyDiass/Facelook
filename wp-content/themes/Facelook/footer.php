@@ -12,10 +12,10 @@
         </div>
 
         <nav class="rodape__menu">
-            <a class="rodape__item" href="">home</a>
+            <a class="rodape__item" href="<?php home_url(); ?>/Facelook/home">home</a>
             <a class="rodape__item" href="">parceiros</a>
             <a class="rodape__item" href="">produtos</a>
-            <a class="rodape__item" href="">blog</a>
+            <a class="rodape__item" href="<?php home_url(); ?>/Facelook/blog">blog</a>
         </nav>
 
         <div class="rodape__contato">

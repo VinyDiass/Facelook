@@ -20,16 +20,16 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'Facelook');
+define('DB_NAME', 'facelook_db');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'docker');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'banana pijama');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
-define('DB_HOST', '172.17.0.3');
+define('DB_HOST', 'localhost');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
@@ -84,6 +84,8 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
 define('WP_DEBUG', false);
+define('WP_HOME','http://localhost/Facelook/');
+define('WP_SITEURL','http://localhost/Facelook/');
 
 /* Isto é tudo, pode parar de editar! :) */
 
