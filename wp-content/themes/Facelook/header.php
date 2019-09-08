@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-	<?php wp_head(); ?>
+    <script src="https://kit.fontawesome.com/837a87187f.js"></script>
+    <?php wp_head(); ?>
 </head>
 <body>
     <!-- HEADER -->
