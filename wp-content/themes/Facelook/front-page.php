@@ -95,91 +95,26 @@
                 <!-- AREA BARBEIROS -->
                 <div class="barber__fotos">
                     <!-- BOX BARBEIRO -->
-                    <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
-                    </div>
-                     <!-- BOX BARBEIRO -->
-                     <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
-                    </div>
-                     <!-- BOX BARBEIRO -->
-                     <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
-                    </div>
-                     <!-- BOX BARBEIRO -->
-                     <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
-                    </div>
-                     <!-- BOX BARBEIRO -->
-                     <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
-                    </div>
-                     <!-- BOX BARBEIRO -->
-                     <div class="imagemBarbeiro" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="conteudoBarbeiro">
-                                <h4 class="conteudoBarbeiro__titulo">Jamilton Damasceno</h4>
-                                <h5 class="conteudoBarbeiro__especialidade">Barbeiro</h5>
-                                <p class="conteudoBarbeiro__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                                <nav class="conteudoBarbeiro__social">
-                                    <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                    <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-                                </nav>
-                        </div>
+            <?php
+                $barber_Query = new WP_Query();
+                $barber_Query->query('showposts=3&post_type=barbeiros'.'&paged='.$paged);
+            
+                if($barber_Query->have_posts()):
+                    while($barber_Query->have_posts()):
+                        $barber_Query->the_post();
+            ?>
+    
+
+                    <?php get_template_part( 'template-parts/content', 'barberCard' ); ?>
+    
+
+
+            <?php  endwhile; endif; ?>
+                     
                     </div>
                 </div>
             </div>
+
                     <!-- FIM AREA BARBEIROS -->
         </section>
 
@@ -247,16 +182,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- AREA REDES SOCIAIS -->
-        <div class="redes">
-            <nav class="wrapper redes__nav">
-                <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
-            </nav>
-        </div>
 	</main>
 	
 	<?php get_footer(); ?>

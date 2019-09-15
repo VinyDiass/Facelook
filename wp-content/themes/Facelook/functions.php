@@ -119,6 +119,91 @@ $posttypes = array(
 		),
 
 	),
+	// Post types barbeiros
+	'barbeiros' => array(
+
+		'labels' => array(
+			'name'               => _( 'Barbeiros'),
+			'singular_name'      => _( 'Barbeiros'),
+			'menu_name'          => _( 'Barbeiros'),
+			'name_admin_bar'     => _( 'Barbeiros'),
+			'add_new'            => _( 'Novo Barbeiro(a)'),
+			'add_new_item'       => __( 'Novo Barbeiro(a)'),
+			'new_item'           => __( 'Novo Barbeiro(a)'),
+			'edit_item'          => __( 'Editar Barbeiro(a)'),
+			'view_item'          => __( 'Ver Barbeiro'),
+			'all_items'          => __( 'Ver barbeiros'),
+			'search_items'       => __( 'Procurar'),
+			'parent_item_colon'  => __( 'barbeiro-pai:'),
+			'not_found'          => __( 'Nenhum Barber encontrado.'),
+			'not_found_in_trash' => __( 'Nenhum Barber encontrado na lixeira.')
+		),
+		'menu_icon' => 'dashicons-format-quote',
+		'description' => __('barber Posts'),
+		'rest_base' =>'custom/barber',
+		'has_archive' => 'biblioteca/barber',
+		'rewrite'     => [
+			'slug' => 'barber',
+		],
+		'supports'    => array('title', 'thumbnail', 'excerpt', 'editor'),
+		'taxonomy'    => array(
+
+			'barber_category' => array(
+
+				'hierarchical'      => true,
+				'labels'            => array(
+					'name'              => _( 'Especialidades'),
+					'singular_name'     => _( 'Especialidades'),
+					'search_items'      => __( 'Procurar' ),
+					'all_items'         => __( 'Todas as especialidades' ),
+					'parent_item'       => __( 'Especialidade Pai' ),
+					'parent_item_colon' => __( 'Especialidade Pai:' ),
+					'edit_item'         => __( 'Editar Especialidade' ),
+					'update_item'       => __( 'Atualizar Especialidade' ),
+					'add_new_item'      => __( 'Nova Especialidade' ),
+					'new_item_name'     => __( 'Nova Especialidade' ),
+					'menu_name'         => __( 'Especialidades' ),
+				),
+
+				'show_ui'           => true,
+				'show_admin_column' => true,
+				'query_var'         => true,
+				'rewrite'           => array('slug' => 'especialidade'),
+				'show_in_rest'      => true,
+				'rest_base'         => 'barber_category'
+
+			),
+
+			'barber_tag' => array(
+
+				'hierarchical'      => false,
+				'labels'            => array(
+					'name'              => _( 'Tags'),
+					'singular_name'     => _( 'Tags'),
+					'search_items'      => __( 'Procurar' ),
+					'all_items'         => __( 'Tags' ),
+					'parent_item'       => __( 'Tag Pai' ),
+					'parent_item_colon' => __( 'Tag Pai:' ),
+					'edit_item'         => __( 'Editar Tag' ),
+					'update_item'       => __( 'Atualizar Tag' ),
+					'add_new_item'      => __( 'Nova Tag' ),
+					'new_item_name'     => __( 'Nova Tag' ),
+					'menu_name'         => __( 'Tags' ),
+				),
+
+				'show_ui'           => true,
+				'show_admin_column' => true,
+				'query_var'         => true,
+				'rewrite'           => array('slug' => 'tags'),
+				'show_in_rest'      => true,
+				'rest_base'         => 'barber_tag'
+
+			),
+
+
+		),
+
+	),
 
 );
 

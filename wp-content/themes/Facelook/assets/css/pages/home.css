@@ -233,7 +233,7 @@
 }
 
 .barber__titulo {
-    font-size: 4.5rem;
+    font-size: 4rem;
     color: #555555;
     font-weight: 100;
     display: flex;
@@ -443,8 +443,6 @@
 .blog__info {
     opacity: 0;
     transition: .8s;
-    border-left: 3px solid #daa250;
-    border-top: 3px solid #fdd7a0;
     height: 97%;
     width: 95%;
     position: absolute;
@@ -492,26 +490,3 @@ i.far.fa-clock {
     margin-top: 50px;
     border-radius: 30px;
 }
-
-/* ---------------------------
-            REDES SOCIAIS
--------------------------------- */
-
-.redes {
-    width: 100%;
-    height: 60px;
-    background-color: #daa250;
-}
-
-.redes__nav {
-    display: flex;
-    justify-content: space-around;
-}
-
-.redes__items {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 10px;
-}
-

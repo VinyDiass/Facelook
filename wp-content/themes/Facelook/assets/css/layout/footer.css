@@ -1,4 +1,26 @@
 /* ---------------------------
+            REDES SOCIAIS
+-------------------------------- */
+
+.redes {
+    width: 100%;
+    height: 60px;
+    background-color: #daa250;
+}
+
+.redes__nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes__items {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+/* ---------------------------
             FOOTER
 -------------------------------- */
 
