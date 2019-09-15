@@ -23,7 +23,7 @@
             <!-- ITEMS MENU -->
             <div class="nav__menu">
                 <a class="menu__item" href="<?php home_url();?>/Facelook/home">Home</a>
-                <a class="menu__item" href="#">Produtos</a>
+                <a class="menu__item" href="<?php home_url();?>/Facelook/produtos">Produtos</a>
                 <a class="menu__item" href="<?php home_url(); ?>/Facelook/blog">Blog</a>
                 <a class="btn menu__btn" href="#">Revender</a>
             </div>
