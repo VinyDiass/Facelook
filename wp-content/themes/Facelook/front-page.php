@@ -97,17 +97,26 @@
                     <!-- BOX BARBEIRO -->
             <?php
                 $barber_Query = new WP_Query();
-                $barber_Query->query('showposts=3&post_type=barbeiros'.'&paged='.$paged);
+                $barber_Query->query('post_type=barbeiros'.'&paged='.$paged);
             
                 if($barber_Query->have_posts()):
                     while($barber_Query->have_posts()):
                         $barber_Query->the_post();
             ?>
     
-
-                    <?php get_template_part( 'template-parts/content', 'barberCard' ); ?>
-    
-
+                <div class="imagemBarbeiro" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
+                    <div class="conteudoBarbeiro">
+                            <h4 class="conteudoBarbeiro__titulo"><?php the_title();?></h4>
+                            <h5 class="conteudoBarbeiro__especialidade"><?php the_category(); ?></h5>
+                            <p class="conteudoBarbeiro__descricao"><?php the_excerpt();?></p>
+                            <nav class="conteudoBarbeiro__social">
+                                <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
+                                <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
+                            </nav>
+                    </div>
+                </div>
 
             <?php  endwhile; endif; ?>
                      
@@ -141,44 +150,27 @@
                 <h2>Veja as ultimas postagens</h2>
                 <div class="blog__postagem">
                     <!-- POST -->
-                    <div class="blog__post" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
+                    <?php
+                    $wp_query->query('post_per_pages=3&post_type=blogs'.'&paged='.$paged);
+                        if ($wp_query->have_posts()):
+                            while($wp_query->have_posts()):
+                                $wp_query->the_post();
+                    ?>
+                    <div class="blog__post" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?> );">
                         <div class="blog__info">
-                            <i class="far fa-clock"></i><span class="blog__data">02/jan/20</span>
-                            <h4 class="blog__titulo"> Homem fez barba de forma inusitada, veja como ficou insano </h4>
+                            <i class="far fa-clock"></i><span class="blog__data"><?php The_date('d/m/Y'); ?></span>
+                            <h4 class="blog__titulo"> <?php the_title(); ?> </h4>
                             <p class="blog__previa">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
-                                viverra maecenas accumsan lacus vel facilisis. 
+                                <?php the_excerpt(); ?> 
                             </p>
-                            <a class="blog__chamada" href="#">Leia mais <i class="fas fa-angle-double-right"></i></a>
+                            <a href="<?php the_permalink(); ?>" class="blog__chamada" href="#">Leia mais <i class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
-                    <!-- POST -->
-                    <div class="blog__post" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="blog__info">
-                            <i class="far fa-clock"></i><span class="blog__data">02/jan/20</span>
-                            <h4 class="blog__titulo"> Homem fez barba de forma inusitada, veja como ficou insano </h4>
-                            <p class="blog__previa">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
-                                viverra maecenas accumsan lacus vel facilisis. 
-                            </p>
-                            <a class="blog__chamada" href="#">Leia mais <i class="fas fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- POST -->
-                    <div class="blog__post" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
-                        <div class="blog__info">
-                            <i class="far fa-clock"></i><span class="blog__data">02/jan/20</span>
-                            <h4 class="blog__titulo"> Homem fez barba de forma inusitada, veja como ficou insano </h4>
-                            <p class="blog__previa">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo 
-                                viverra maecenas accumsan lacus vel facilisis. 
-                            </p>
-                            <a class="blog__chamada" href="#">Leia mais <i class="fas fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
+                    <?php
+                        endwhile;
+                        wp_reset_postdata();
+                    endif;
+                    ?>
                 </div>
             </div>
         </section>

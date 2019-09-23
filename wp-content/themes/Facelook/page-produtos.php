@@ -25,14 +25,27 @@
                 </nav>
             </aside>
             <section class="area__produtos">
+                    <?php
+
+                    $prod_query = new WP_Query();
+                    $prod_query->query('post_type=prods'.'&paged='.$paged);
+                        if ($prod_query->have_posts()):
+                            while ($prod_query->have_posts()):
+                                $prod_query->the_post();
+                    ?>
                 <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
+                    <div class="imagem__produto" style="background-image:url(<?php  echo get_the_post_thumbnail_url(); ?>);">
                         <div class="conteudo__imagem__produto">
-                            <span>+</span>
+                            <span><a href="<?php the_permalink(); ?>">+</a></span>
                         </div>
                     </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
+                    <h6 class="nome__produto"><?php the_title()?></h6>
                 </div>
+                <?php
+                        endwhile;
+                            wp_reset_postdata();
+                        endif;
+                ?>
                 <div class="box__produto">
                     <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
                         <div class="conteudo__imagem__produto">

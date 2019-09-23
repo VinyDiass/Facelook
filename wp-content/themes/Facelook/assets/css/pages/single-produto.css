@@ -1,0 +1,74 @@
+/* Paginacao */
+
+.paginacao__links {
+    padding: 65px 0 45px 0;
+}
+.paginacao__links a {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #999;
+}
+
+/* Informações do produto */
+
+.titulo__principal {
+    padding-bottom: 60px !important;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    padding: 20px 0;
+}
+
+.titulo__secundario {
+    font-size: 1.5rem !important;
+    color: #daa250;
+}
+
+.produto__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.produto__img {
+    background: url('img-bonita-1.jpg') no-repeat center center;
+    background-size: cover; 
+    width: 555px;
+    height: 490px;
+
+}
+
+.produto__parag {
+    max-width: 457px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #666;
+}
+
+.produto__btn {
+    border-radius: 0 !important;
+    background: #25d366;
+    color: #fff;
+    font-size: 0.875rem;
+    margin-top: 30px;
+}
+
+/* Slide de produtos */
+
+.slide__titulo {
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 190px 0 120px 0;
+}
+
+.slide__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide__item {
+    width: 285px;
+    height: 323px;
+    border: 1px solid red;
+}

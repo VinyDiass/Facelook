@@ -12,14 +12,24 @@
 
 		<?php
 			$wp_query = new WP_Query();
-			$wp_query->query('showposts=3&post_type=blogs'.'&paged='.$paged);
+			$wp_query->query('post_type=blogs'.'&paged='.$paged);
 
 			if  ($wp_query-> have_posts()) :
 				while ($wp_query->have_posts()) :
 					$wp_query->the_post();
 		?>
 
-			<?php get_template_part( 'template-parts/content', 'blog' ); ?>
+			<div class="post">
+			<div class="thumb__post" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+			<div class="content__post">
+				<h3 class="title__post"><?php the_title(); ?></h3>
+				<article class="excerpt__post">
+					<?php the_excerpt(); ?>
+				</article>
+				<a href="<?php the_permalink(); ?>" class="link__post">Leia mais</a>
+			</div>
+			</div>
+			<hr class="divisoria--amarela divisorio__blog">
 
 			<?php
 						endwhile;

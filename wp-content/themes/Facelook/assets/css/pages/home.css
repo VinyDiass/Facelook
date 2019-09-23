@@ -13,10 +13,10 @@
 
 .slider__content {
     display: flex;
-    height: 550px;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 30px 0;
 }
 
 .sliderContent__title {
@@ -67,7 +67,7 @@
 }
 
 .linhas {
-    height: 900px;
+    padding: 150px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,6 +86,7 @@
     height: 285px;
     border: 2px solid #eeeeee;
     border-top: 2px solid #daa250;
+    margin-top: 20px; 
 }
 
 .linhas__paragrafo {
@@ -159,7 +160,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 275px; */
+    margin-top: 20px;
 }
 
 .facelook__titulo {
@@ -217,7 +218,7 @@
 .barber {
     display: flex;
     align-items: center;
-    height: 1490px;
+    padding: 150px 0;
 }
 
 .barber__wrapper {
@@ -342,7 +343,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 355px;
+    flex-wrap: wrap;
+    padding: 80px 0;
 }
 
 .news__titulo {
@@ -361,6 +363,7 @@
 
 .news__form {
     display: flex;
+    margin-top: 20px;
 }
 
 .news__form input {
@@ -394,7 +397,7 @@
 }
 
 .blog__wrapper {
-    height: 1000px;
+    padding: 200px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -410,9 +413,11 @@
 .blog__postagem {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blog__post {
+    margin-top: 20px;
     width: 360px;
     height: 500px;
     background-position: center;
@@ -482,11 +487,14 @@ i.far.fa-clock {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    padding: 15px 15px;
-    background-color: #daa250;
-    width: max-content;
+    color: #daa250;
     font-size: 13px;
-    color: #fff;
     margin-top: 50px;
-    border-radius: 30px;
 }
+
+/* MEDIA QUERIES */
+ @media (max-width: 768px) {
+    .slider{
+        background-size: 0; 
+    }
+ }

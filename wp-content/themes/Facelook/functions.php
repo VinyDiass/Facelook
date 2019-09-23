@@ -204,6 +204,91 @@ $posttypes = array(
 		),
 
 	),
+	// Post types Produtos
+	'prods' => array(
+
+    'labels' => array(
+        'name'               => _( 'Produtos'),
+        'singular_name'      => _( 'Produtos'),
+        'menu_name'          => _( 'Produtos'),
+        'name_admin_bar'     => _( 'Produto'),
+        'add_new'            => _( 'Novo Produto'),
+        'add_new_item'       => __( 'Novo Produto'),
+        'new_item'           => __( 'Novo Produto'),
+        'edit_item'          => __( 'Editar Produto'),
+        'view_item'          => __( 'Ver Produto'),
+        'all_items'          => __( 'Ver Produtos'),
+        'search_items'       => __( 'Procurar'),
+        'parent_item_colon'  => __( 'produto-pai:'),
+        'not_found'          => __( 'Nenhum Produto encontrado.'),
+        'not_found_in_trash' => __( 'Nenhum Produto encontrado na lixeira.')
+    ),
+    'menu_icon' => 'dashicons-format-quote',
+    'description' => __('Produto Posts'),
+    'rest_base' =>'custom/produto',
+    'has_archive' => 'biblioteca/produto',
+    'rewrite'     => [
+        'slug' => 'produto',
+    ],
+    'supports'    => array('title', 'thumbnail', 'excerpt', 'editor'),
+    'taxonomy'    => array(
+
+        'produto_category' => array(
+
+            'hierarchical'      => true,
+            'labels'            => array(
+                'name'              => _( 'Categorias'),
+                'singular_name'     => _( 'Categorias'),
+                'search_items'      => __( 'Procurar' ),
+                'all_items'         => __( 'Categorias' ),
+                'parent_item'       => __( 'Categoria Pai' ),
+                'parent_item_colon' => __( 'Categoria Pai:' ),
+                'edit_item'         => __( 'Editar Categoria' ),
+                'update_item'       => __( 'Atualizar' ),
+                'add_new_item'      => __( 'Adicionar Categoria' ),
+                'new_item_name'     => __( 'Nova Categoria' ),
+                'menu_name'         => __( 'Categorias' ),
+            ),
+
+            'show_ui'           => true,
+            'show_admin_column' => true,
+            'query_var'         => true,
+            'rewrite'           => array('slug' => 'categorias'),
+            'show_in_rest'      => true,
+            'rest_base'         => 'produto_category'
+
+        ),
+
+        'produto_tag' => array(
+
+            'hierarchical'      => false,
+            'labels'            => array(
+                'name'              => _( 'Tags'),
+                'singular_name'     => _( 'Tags'),
+                'search_items'      => __( 'Procurar' ),
+                'all_items'         => __( 'Tags' ),
+                'parent_item'       => __( 'Tag Pai' ),
+                'parent_item_colon' => __( 'Tag Pai:' ),
+                'edit_item'         => __( 'Editar Tag' ),
+                'update_item'       => __( 'Atualizar Tag' ),
+                'add_new_item'      => __( 'Nova Tag' ),
+                'new_item_name'     => __( 'Nova Tag' ),
+                'menu_name'         => __( 'Tags' ),
+            ),
+
+            'show_ui'           => true,
+            'show_admin_column' => true,
+            'query_var'         => true,
+            'rewrite'           => array('slug' => 'tags'),
+            'show_in_rest'      => true,
+            'rest_base'         => 'produto_tag'
+
+        ),
+
+
+    ),
+
+),
 
 );
 
