@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15-Set-2019 às 15:34
+-- Tempo de geração: 23-Set-2019 às 22:58
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.3.8
 
@@ -183,9 +183,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (75, 'default_comments_page', 'newest', 'yes'),
 (76, 'comment_order', 'asc', 'yes'),
 (77, 'sticky_posts', 'a:0:{}', 'yes'),
-(78, 'widget_categories', 'a:2:{i:2;a:4:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
-(79, 'widget_text', 'a:0:{}', 'yes'),
-(80, 'widget_rss', 'a:0:{}', 'yes'),
+(78, 'widget_categories', 'a:4:{i:2;a:4:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}i:3;a:4:{s:5:\"title\";s:10:\"Categorias\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}i:5;a:4:{s:5:\"title\";s:10:\"Categorias\";s:5:\"count\";i:0;s:12:\"hierarchical\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
+(79, 'widget_text', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
+(80, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (81, 'uninstall_plugins', 'a:0:{}', 'no'),
 (82, 'timezone_string', 'America/Sao_Paulo', 'yes'),
 (83, 'page_for_posts', '0', 'yes'),
@@ -207,8 +207,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (99, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:\"title\";s:0:\"\";s:6:\"number\";i:5;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (100, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (101, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
-(102, 'sidebars_widgets', 'a:2:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(103, 'cron', 'a:6:{i:1568510820;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1568528800;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1568571998;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1568572028;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1568572033;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(102, 'sidebars_widgets', 'a:3:{s:19:\"wp_inactive_widgets\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:7:\"produto\";a:1:{i:0;s:12:\"categories-5\";}s:13:\"array_version\";i:3;}', 'yes'),
+(103, 'cron', 'a:6:{i:1569274020;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1569306400;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1569349598;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1569349628;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1569349633;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (104, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -231,16 +231,22 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (151, 'theme_switched', '', 'yes'),
 (152, 'can_compress_scripts', '1', 'no'),
 (167, 'recently_activated', 'a:0:{}', 'yes'),
-(175, '_site_transient_timeout_browser_666332998c62658cc43216116351bf1f', '1568570245', 'no'),
-(176, '_site_transient_browser_666332998c62658cc43216116351bf1f', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"76.0.3809.100\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
-(177, '_site_transient_timeout_php_check_78e1776a2900a8656cebe7d7ea2a07cc', '1568570246', 'no'),
-(178, '_site_transient_php_check_78e1776a2900a8656cebe7d7ea2a07cc', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(213, 'barber_category_children', 'a:0:{}', 'yes'),
-(217, '_site_transient_timeout_theme_roots', '1568509939', 'no'),
-(218, '_site_transient_theme_roots', 'a:1:{s:8:\"Facelook\";s:7:\"/themes\";}', 'no'),
-(219, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:3:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.2.3.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.2.3-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.2.3-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.2.3-partial-2.zip\";s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:5:\"5.2.2\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1568508143;s:15:\"version_checked\";s:5:\"5.2.2\";s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:4:\"core\";s:4:\"slug\";s:7:\"default\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"5.2.2\";s:7:\"updated\";s:19:\"2019-08-24 16:57:40\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/translation/core/5.2.2/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
-(220, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1568508145;s:7:\"checked\";a:1:{s:8:\"Facelook\";s:3:\"1.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
-(221, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1568508146;s:7:\"checked\";a:1:{s:34:\"advanced-custom-fields-pro/acf.php\";s:5:\"5.8.1\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:0:{}}', 'no');
+(246, 'recovery_mode_email_last_sent', '1568573538', 'yes'),
+(255, 'barber_category_children', 'a:0:{}', 'yes'),
+(290, 'produto_category_children', 'a:0:{}', 'yes'),
+(292, 'category_children', 'a:0:{}', 'yes'),
+(305, '_site_transient_timeout_browser_471e4b86e3560c6feb474def098169b6', '1569785389', 'no'),
+(306, '_site_transient_browser_471e4b86e3560c6feb474def098169b6', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:13:\"76.0.3809.132\";s:8:\"platform\";s:7:\"Windows\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(307, '_site_transient_timeout_php_check_78e1776a2900a8656cebe7d7ea2a07cc', '1569785391', 'no'),
+(308, '_site_transient_php_check_78e1776a2900a8656cebe7d7ea2a07cc', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
+(309, 'blog_category_children', 'a:0:{}', 'yes'),
+(310, '_transient_timeout_plugin_slugs', '1569269133', 'no'),
+(311, '_transient_plugin_slugs', 'a:1:{i:0;s:34:\"advanced-custom-fields-pro/acf.php\";}', 'no'),
+(315, '_site_transient_timeout_theme_roots', '1569265468', 'no'),
+(316, '_site_transient_theme_roots', 'a:1:{s:8:\"Facelook\";s:7:\"/themes\";}', 'no'),
+(317, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:3:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.2.3.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.2.3-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.2.3-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.2.3-partial-2.zip\";s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:5:\"5.2.2\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.2.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.3\";s:7:\"version\";s:5:\"5.2.3\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}}s:12:\"last_checked\";i:1569263672;s:15:\"version_checked\";s:5:\"5.2.2\";s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:4:\"core\";s:4:\"slug\";s:7:\"default\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:5:\"5.2.2\";s:7:\"updated\";s:19:\"2019-08-24 16:57:40\";s:7:\"package\";s:64:\"https://downloads.wordpress.org/translation/core/5.2.2/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}', 'no'),
+(318, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1569263673;s:7:\"checked\";a:1:{s:8:\"Facelook\";s:3:\"1.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+(319, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1569263674;s:7:\"checked\";a:1:{s:34:\"advanced-custom-fields-pro/acf.php\";s:5:\"5.8.1\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:0:{}}', 'no');
 
 -- --------------------------------------------------------
 
@@ -268,7 +274,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (6, 3, '_wp_trash_meta_status', 'draft'),
 (7, 3, '_wp_trash_meta_time', '1566757764'),
 (8, 3, '_wp_desired_post_slug', 'politica-de-privacidade'),
-(9, 7, '_edit_lock', '1566757789:1'),
+(9, 7, '_edit_lock', '1569180556:1'),
 (10, 9, '_edit_lock', '1566757816:1'),
 (11, 1, '_wp_trash_meta_status', 'publish'),
 (12, 1, '_wp_trash_meta_time', '1566760071'),
@@ -278,26 +284,62 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (16, 13, '_wp_attached_file', '2019/08/o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640.jpg'),
 (17, 13, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1024;s:6:\"height\";i:640;s:4:\"file\";s:72:\"2019/08/o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:72:\"o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:72:\"o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640-300x188.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:188;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:72:\"o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640-768x480.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:480;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:73:\"o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640-1024x640.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:640;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (18, 12, '_thumbnail_id', '13'),
-(19, 14, '_edit_lock', '1566763373:1'),
+(19, 14, '_edit_lock', '1569184266:1'),
 (20, 14, '_thumbnail_id', '13'),
 (21, 15, '_edit_lock', '1566764464:1'),
-(22, 18, '_edit_lock', '1568246307:1'),
 (23, 19, '_edit_lock', '1568246401:1'),
-(24, 20, '_edit_lock', '1568247496:1'),
-(25, 21, '_edit_lock', '1568247511:1'),
 (26, 19, '_wp_trash_meta_status', 'publish'),
 (27, 19, '_wp_trash_meta_time', '1568247661'),
 (28, 19, '_wp_desired_post_slug', 'wagninho-pinto-muxo'),
-(29, 22, '_edit_lock', '1568247727:1'),
 (30, 23, '_wp_attached_file', '2019/09/img-frutas-1.jpg'),
 (31, 23, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1300;s:4:\"file\";s:24:\"2019/09/img-frutas-1.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-frutas-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-frutas-1-300x203.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:203;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-frutas-1-768x520.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:520;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-frutas-1-1024x693.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:693;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
-(32, 24, '_edit_lock', '1568247648:1'),
 (33, 25, '_edit_lock', '1568247716:1'),
 (34, 25, '_thumbnail_id', '23'),
-(35, 26, '_edit_lock', '1568248608:1'),
+(35, 26, '_edit_lock', '1568645823:1'),
 (36, 27, '_wp_attached_file', '2019/09/img-bonita-4.jpg'),
 (37, 27, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1080;s:4:\"file\";s:24:\"2019/09/img-bonita-4.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-bonita-4-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-bonita-4-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-bonita-4-768x432.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:432;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-bonita-4-1024x576.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
-(38, 26, '_thumbnail_id', '27');
+(38, 26, '_thumbnail_id', '27'),
+(39, 15, '_wp_trash_meta_status', 'publish'),
+(40, 15, '_wp_trash_meta_time', '1568572381'),
+(41, 15, '_wp_desired_post_slug', 'produto'),
+(42, 29, '_edit_lock', '1569181336:1'),
+(43, 31, '_edit_lock', '1568645999:1'),
+(44, 32, '_wp_attached_file', '2019/09/img-bonita-2.jpg'),
+(45, 32, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1080;s:4:\"file\";s:24:\"2019/09/img-bonita-2.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-bonita-2-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-bonita-2-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-bonita-2-768x432.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:432;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-bonita-2-1024x576.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(46, 31, '_thumbnail_id', '32'),
+(47, 33, '_edit_lock', '1568646007:1'),
+(48, 34, '_wp_attached_file', '2019/09/img-bonita-3.jpg'),
+(49, 34, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1080;s:4:\"file\";s:24:\"2019/09/img-bonita-3.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-bonita-3-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-bonita-3-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-bonita-3-768x432.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:432;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-bonita-3-1024x576.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(50, 33, '_thumbnail_id', '34'),
+(51, 31, '_edit_last', '1'),
+(52, 33, '_edit_last', '1'),
+(53, 35, '_edit_lock', '1568646893:1'),
+(54, 36, '_edit_lock', '1568646856:1'),
+(55, 37, '_wp_attached_file', '2019/09/img-frutas-1-1.jpg'),
+(56, 37, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1300;s:4:\"file\";s:26:\"2019/09/img-frutas-1-1.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:26:\"img-frutas-1-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:26:\"img-frutas-1-1-300x203.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:203;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:26:\"img-frutas-1-1-768x520.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:520;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:27:\"img-frutas-1-1-1024x693.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:693;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(57, 38, '_wp_attached_file', '2019/09/img-frutas-2.jpg'),
+(58, 38, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1200;s:4:\"file\";s:24:\"2019/09/img-frutas-2.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-frutas-2-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-frutas-2-300x188.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:188;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-frutas-2-768x480.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:480;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-frutas-2-1024x640.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:640;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(59, 36, '_thumbnail_id', '38'),
+(60, 39, '_wp_attached_file', '2019/09/img-frutas-3.jpg'),
+(61, 39, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1280;s:4:\"file\";s:24:\"2019/09/img-frutas-3.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:24:\"img-frutas-3-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:24:\"img-frutas-3-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:24:\"img-frutas-3-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:25:\"img-frutas-3-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(62, 35, '_thumbnail_id', '39'),
+(63, 40, '_edit_lock', '1568680721:1'),
+(64, 41, '_edit_lock', '1568680745:1'),
+(65, 42, '_edit_lock', '1568680801:1'),
+(66, 43, '_edit_lock', '1568680846:1'),
+(67, 44, '_edit_lock', '1568680859:1'),
+(68, 45, '_edit_lock', '1568680933:1'),
+(69, 46, '_edit_lock', '1568680968:1'),
+(70, 47, '_edit_lock', '1568681052:1'),
+(71, 48, '_edit_lock', '1568683985:1'),
+(72, 49, '_edit_lock', '1569172450:1'),
+(75, 51, '_edit_lock', '1569170952:1'),
+(76, 52, '_edit_lock', '1569170968:1'),
+(79, 56, '_edit_lock', '1569181811:1'),
+(80, 57, '_edit_lock', '1569186091:1'),
+(81, 58, '_wp_attached_file', '2019/09/img-bonita-2-1.jpg'),
+(82, 58, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1920;s:6:\"height\";i:1080;s:4:\"file\";s:26:\"2019/09/img-bonita-2-1.jpg\";s:5:\"sizes\";a:4:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:26:\"img-bonita-2-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:6:\"medium\";a:4:{s:4:\"file\";s:26:\"img-bonita-2-1-300x169.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:169;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:26:\"img-bonita-2-1-768x432.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:432;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:27:\"img-bonita-2-1-1024x576.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
+(83, 57, '_thumbnail_id', '58');
 
 -- --------------------------------------------------------
 
@@ -348,20 +390,44 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (11, 1, '2019-08-25 16:07:51', '2019-08-25 19:07:51', '<!-- wp:paragraph -->\n<p>Boas-vindas ao WordPress. Esse é o seu primeiro post. Edite-o ou exclua-o, e então comece a escrever!</p>\n<!-- /wp:paragraph -->', 'Olá, mundo!', '', 'inherit', 'closed', 'closed', '', '1-revision-v1', '', '', '2019-08-25 16:07:51', '2019-08-25 19:07:51', '', 1, 'http://localhost/Facelook/1-revision-v1/', 0, 'revision', '', 0),
 (12, 1, '2019-08-25 16:12:05', '2019-08-25 19:12:05', '<!-- wp:paragraph -->\n<p>Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet   Lorem ipsum dolor sit amet   Lorem ipsum dolor sit amet   Lorem ipsum dolor sit amet   Lorem ipsum dolor sit amet   Lorem ipsum dolor sit amet  </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p> Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet </p>\n<!-- /wp:paragraph -->', 'Post de sucesso', '', 'publish', 'closed', 'closed', '', 'post-de-sucesso', '', '', '2019-08-25 16:12:05', '2019-08-25 19:12:05', '', 0, 'http://localhost/Facelook/?post_type=blogs&#038;p=12', 0, 'blogs', '', 0),
 (13, 1, '2019-08-25 16:11:52', '2019-08-25 19:11:52', '', 'o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640', '', 'inherit', 'open', 'closed', '', 'o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640', '', '', '2019-08-25 16:11:52', '2019-08-25 19:11:52', '', 12, 'http://localhost/Facelook/wp-content/uploads/2019/08/o-que-nao-pode-faltar-na-sua-barbearia-equipamentos-1024x640.jpg', 0, 'attachment', 'image/jpeg', 0),
-(14, 1, '2019-08-25 16:50:30', '2019-08-25 19:50:30', '<!-- wp:paragraph -->\n<p>Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  </p>\n<!-- /wp:paragraph -->', 'Como alisar os cabelos corretamente.', '', 'publish', 'closed', 'closed', '', 'como-alisar-os-cabelos-corretamente', '', '', '2019-08-25 16:50:30', '2019-08-25 19:50:30', '', 0, 'http://localhost/Facelook/?post_type=blogs&#038;p=14', 0, 'blogs', '', 0),
-(15, 1, '2019-08-25 17:23:38', '2019-08-25 20:23:38', '', 'Produto', '', 'publish', 'closed', 'closed', '', 'produto', '', '', '2019-08-25 17:23:38', '2019-08-25 20:23:38', '', 0, 'http://localhost/Facelook/?page_id=15', 0, 'page', '', 0),
+(14, 1, '2019-08-25 16:50:30', '2019-08-25 19:50:30', '<!-- wp:paragraph -->\n<p>Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum   Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  Lorem Ipsulum  </p>\n<!-- /wp:paragraph -->', 'Como alisar os cabelos corretamente.', '', 'publish', 'closed', 'closed', '', 'como-alisar-os-cabelos-corretamente', '', '', '2019-09-22 16:52:59', '2019-09-22 19:52:59', '', 0, 'http://localhost/Facelook/?post_type=blogs&#038;p=14', 0, 'blogs', '', 0),
+(15, 1, '2019-08-25 17:23:38', '2019-08-25 20:23:38', '', 'Produto', '', 'trash', 'closed', 'closed', '', 'produto__trashed', '', '', '2019-09-15 15:33:01', '2019-09-15 18:33:01', '', 0, 'http://localhost/Facelook/?page_id=15', 0, 'page', '', 0),
 (16, 1, '2019-08-25 17:23:38', '2019-08-25 20:23:38', '', 'Produto', '', 'inherit', 'closed', 'closed', '', '15-revision-v1', '', '', '2019-08-25 17:23:38', '2019-08-25 20:23:38', '', 15, 'http://localhost/Facelook/15-revision-v1/', 0, 'revision', '', 0),
-(17, 1, '2019-09-08 14:57:26', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2019-09-08 14:57:26', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?p=17', 0, 'post', '', 0),
-(18, 1, '2019-09-11 20:57:02', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-11 20:57:02', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=18', 0, 'barbeiros', '', 0),
 (19, 1, '2019-09-11 21:01:59', '2019-09-12 00:01:59', '<!-- wp:paragraph -->\n<p>Dono da empresa facelook e cliente da adeco</p>\n<!-- /wp:paragraph -->', 'Wagninho pinto muxo', '', 'trash', 'closed', 'closed', '', 'wagninho-pinto-muxo__trashed', '', '', '2019-09-11 21:21:01', '2019-09-12 00:21:01', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=19', 0, 'barbeiros', '', 0),
-(20, 1, '2019-09-11 21:19:47', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-11 21:19:47', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=20', 0, 'barbeiros', '', 0),
-(21, 1, '2019-09-11 21:20:46', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-11 21:20:46', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=21', 0, 'barbeiros', '', 0),
-(22, 1, '2019-09-11 21:21:05', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-11 21:21:05', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=22', 0, 'barbeiros', '', 0),
-(23, 1, '2019-09-11 21:22:04', '2019-09-12 00:22:04', '', 'img-frutas-1', '', 'inherit', 'open', 'closed', '', 'img-frutas-1', '', '', '2019-09-11 21:22:04', '2019-09-12 00:22:04', '', 22, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-frutas-1.jpg', 0, 'attachment', 'image/jpeg', 0),
-(24, 1, '2019-09-11 21:23:04', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-11 21:23:04', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=24', 0, 'barbeiros', '', 0),
+(23, 1, '2019-09-11 21:22:04', '2019-09-12 00:22:04', '', 'img-frutas-1', '', 'inherit', 'open', 'closed', '', 'img-frutas-1', '', '', '2019-09-11 21:22:04', '2019-09-12 00:22:04', '', 0, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-frutas-1.jpg', 0, 'attachment', 'image/jpeg', 0),
 (25, 1, '2019-09-11 21:24:17', '2019-09-12 00:24:17', '<!-- wp:paragraph -->\n<p>Dono da facelook e grande amigo do viny, gerente da Adeco e ainda é pinto muxu </p>\n<!-- /wp:paragraph -->', 'Wagninho malandro', '', 'publish', 'closed', 'closed', '', 'wagninho-malandro', '', '', '2019-09-11 21:24:17', '2019-09-12 00:24:17', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=25', 0, 'barbeiros', '', 0),
-(26, 1, '2019-09-11 21:39:10', '2019-09-12 00:39:10', '<!-- wp:paragraph -->\n<p>ajkdhjsjhgsajfhgsahfgasjgfjask</p>\n<!-- /wp:paragraph -->', 'Alguem', '', 'publish', 'closed', 'closed', '', 'alguem', '', '', '2019-09-11 21:39:10', '2019-09-12 00:39:10', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=26', 0, 'barbeiros', '', 0),
-(27, 1, '2019-09-11 21:39:02', '2019-09-12 00:39:02', '', 'img-bonita-4', '', 'inherit', 'open', 'closed', '', 'img-bonita-4', '', '', '2019-09-11 21:39:02', '2019-09-12 00:39:02', '', 26, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-bonita-4.jpg', 0, 'attachment', 'image/jpeg', 0);
+(26, 1, '2019-09-11 21:39:10', '2019-09-12 00:39:10', '<!-- wp:paragraph -->\n<p>ajkdhjsjhgsajfhgsahfgasjgfjask</p>\n<!-- /wp:paragraph -->', 'Alguem', '', 'publish', 'closed', 'closed', '', 'alguem', '', '', '2019-09-16 11:59:20', '2019-09-16 14:59:20', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=26', 0, 'barbeiros', '', 0),
+(27, 1, '2019-09-11 21:39:02', '2019-09-12 00:39:02', '', 'img-bonita-4', '', 'inherit', 'open', 'closed', '', 'img-bonita-4', '', '', '2019-09-11 21:39:02', '2019-09-12 00:39:02', '', 26, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-bonita-4.jpg', 0, 'attachment', 'image/jpeg', 0),
+(29, 1, '2019-09-15 15:33:19', '2019-09-15 18:33:19', '', 'Produtos', '', 'publish', 'closed', 'closed', '', 'produtos', '', '', '2019-09-22 16:38:35', '2019-09-22 19:38:35', '', 0, 'http://localhost/Facelook/?page_id=29', 0, 'page', '', 0),
+(30, 1, '2019-09-15 15:33:19', '2019-09-15 18:33:19', '', 'Produtos', '', 'inherit', 'closed', 'closed', '', '29-revision-v1', '', '', '2019-09-15 15:33:19', '2019-09-15 18:33:19', '', 29, 'http://localhost/Facelook/29-revision-v1/', 0, 'revision', '', 0),
+(31, 1, '2019-09-16 11:56:10', '2019-09-16 14:56:10', '<!-- wp:paragraph -->\n<p>Adoro meu trabalho, foi a melhor escolha da minha vida</p>\n<!-- /wp:paragraph -->', 'Agata', '', 'publish', 'closed', 'closed', '', 'agata', '', '', '2019-09-16 11:59:59', '2019-09-16 14:59:59', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=31', 0, 'barbeiros', '', 0),
+(32, 1, '2019-09-16 11:55:56', '2019-09-16 14:55:56', '', 'img-bonita-2', '', 'inherit', 'open', 'closed', '', 'img-bonita-2', '', '', '2019-09-16 11:55:56', '2019-09-16 14:55:56', '', 31, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-bonita-2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(33, 1, '2019-09-16 11:57:35', '2019-09-16 14:57:35', '<!-- wp:paragraph -->\n<p>Sou feliz com minha profissão e tenho muito orgulho disso</p>\n<!-- /wp:paragraph -->', 'Mercio fedo', '', 'publish', 'closed', 'closed', '', 'mercio-fedo', '', '', '2019-09-16 12:00:07', '2019-09-16 15:00:07', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=33', 0, 'barbeiros', '', 0),
+(34, 1, '2019-09-16 11:57:28', '2019-09-16 14:57:28', '', 'img-bonita-3', '', 'inherit', 'open', 'closed', '', 'img-bonita-3', '', '', '2019-09-16 11:57:28', '2019-09-16 14:57:28', '', 33, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-bonita-3.jpg', 0, 'attachment', 'image/jpeg', 0),
+(35, 1, '2019-09-16 12:04:10', '2019-09-16 15:04:10', '<!-- wp:paragraph -->\n<p>adjsgfjbcmbqHGEYQWUYGDSSJHSJ</p>\n<!-- /wp:paragraph -->', 'Outro alguem', '', 'publish', 'closed', 'closed', '', 'outro-alguem', '', '', '2019-09-16 12:17:09', '2019-09-16 15:17:09', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=35', 0, 'barbeiros', '', 0),
+(36, 1, '2019-09-16 12:04:51', '2019-09-16 15:04:51', '<!-- wp:paragraph -->\n<p>sanbdnscnv madsdhgsdjfgwhiudhsjcnnvnsbhjf</p>\n<!-- /wp:paragraph -->', 'Outro parceiro', '', 'publish', 'closed', 'closed', '', 'outro-parceiro', '', '', '2019-09-16 12:16:37', '2019-09-16 15:16:37', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&#038;p=36', 0, 'barbeiros', '', 0),
+(37, 1, '2019-09-16 12:15:31', '2019-09-16 15:15:31', '', 'img-frutas-1', '', 'inherit', 'open', 'closed', '', 'img-frutas-1-2', '', '', '2019-09-16 12:15:31', '2019-09-16 15:15:31', '', 36, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-frutas-1-1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(38, 1, '2019-09-16 12:15:47', '2019-09-16 15:15:47', '', 'img-frutas-2', '', 'inherit', 'open', 'closed', '', 'img-frutas-2', '', '', '2019-09-16 12:15:47', '2019-09-16 15:15:47', '', 36, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-frutas-2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(39, 1, '2019-09-16 12:17:03', '2019-09-16 15:17:03', '', 'img-frutas-3', '', 'inherit', 'open', 'closed', '', 'img-frutas-3', '', '', '2019-09-16 12:17:03', '2019-09-16 15:17:03', '', 35, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-frutas-3.jpg', 0, 'attachment', 'image/jpeg', 0),
+(40, 1, '2019-09-16 21:39:50', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:39:50', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=40', 0, 'barbeiros', '', 0),
+(41, 1, '2019-09-16 21:41:07', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:41:07', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=41', 0, 'barbeiros', '', 0),
+(42, 1, '2019-09-16 21:41:30', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:41:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=42', 0, 'barbeiros', '', 0),
+(43, 1, '2019-09-16 21:42:27', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:42:27', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=43', 0, 'barbeiros', '', 0),
+(44, 1, '2019-09-16 21:43:11', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:43:11', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=44', 0, 'barbeiros', '', 0),
+(45, 1, '2019-09-16 21:43:38', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:43:38', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=45', 0, 'barbeiros', '', 0),
+(46, 1, '2019-09-16 21:44:39', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:44:39', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=46', 0, 'barbeiros', '', 0),
+(47, 1, '2019-09-16 21:45:13', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2019-09-16 21:45:13', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?post_type=barbeiros&p=47', 0, 'barbeiros', '', 0),
+(48, 1, '2019-09-16 22:07:37', '2019-09-17 01:07:37', '<!-- wp:paragraph -->\n<p>É o pó krai</p>\n<!-- /wp:paragraph -->', 'Pó descolorante', '', 'publish', 'closed', 'closed', '', 'po-descolorante', '', '', '2019-09-16 22:35:20', '2019-09-17 01:35:20', '', 0, 'http://localhost/Facelook/?post_type=produtos&#038;p=48', 0, 'produtos', '', 0),
+(49, 1, '2019-09-22 13:47:03', '2019-09-22 16:47:03', '<!-- wp:paragraph -->\n<p>aaaaaaaaa</p>\n<!-- /wp:paragraph -->', 'aaaaa', '', 'publish', 'open', 'open', '', 'aaaaa', '', '', '2019-09-22 13:53:10', '2019-09-22 16:53:10', '', 0, 'http://localhost/Facelook/?p=49', 0, 'post', '', 0),
+(50, 1, '2019-09-22 13:47:03', '2019-09-22 16:47:03', '<!-- wp:paragraph -->\n<p>aaaaaaaaa</p>\n<!-- /wp:paragraph -->', 'aaaaa', '', 'inherit', 'closed', 'closed', '', '49-revision-v1', '', '', '2019-09-22 13:47:03', '2019-09-22 16:47:03', '', 49, 'http://localhost/Facelook/49-revision-v1/', 0, 'revision', '', 0),
+(51, 1, '2019-09-22 13:51:34', '2019-09-22 16:51:34', '<!-- wp:paragraph -->\n<p>alguma coisa</p>\n<!-- /wp:paragraph -->', 'alguma coisa', '', 'publish', 'closed', 'closed', '', 'alguma-coisa', '', '', '2019-09-22 13:51:34', '2019-09-22 16:51:34', '', 0, 'http://localhost/Facelook/?post_type=produtos&#038;p=51', 0, 'produtos', '', 0),
+(52, 1, '2019-09-22 13:51:47', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2019-09-22 13:51:47', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?p=52', 0, 'post', '', 0),
+(53, 1, '2019-09-22 16:29:51', '0000-00-00 00:00:00', '', 'Rascunho automático', '', 'auto-draft', 'open', 'open', '', '', '', '', '2019-09-22 16:29:51', '0000-00-00 00:00:00', '', 0, 'http://localhost/Facelook/?p=53', 0, 'post', '', 0),
+(54, 1, '2019-09-22 16:37:17', '2019-09-22 19:37:17', '', 'Produto', '', 'inherit', 'closed', 'closed', '', '29-revision-v1', '', '', '2019-09-22 16:37:17', '2019-09-22 19:37:17', '', 29, 'http://localhost/Facelook/29-revision-v1/', 0, 'revision', '', 0),
+(55, 1, '2019-09-22 16:38:35', '2019-09-22 19:38:35', '', 'Produtos', '', 'inherit', 'closed', 'closed', '', '29-revision-v1', '', '', '2019-09-22 16:38:35', '2019-09-22 19:38:35', '', 29, 'http://localhost/Facelook/29-revision-v1/', 0, 'revision', '', 0),
+(56, 1, '2019-09-22 16:45:27', '2019-09-22 19:45:27', '<!-- wp:paragraph -->\n<p>pinto muxo</p>\n<!-- /wp:paragraph -->', 'Pó descolorante', '', 'publish', 'closed', 'closed', '', 'po-descolorante', '', '', '2019-09-22 16:45:27', '2019-09-22 19:45:27', '', 0, 'http://localhost/Facelook/?post_type=prods&#038;p=56', 0, 'prods', '', 0),
+(57, 1, '2019-09-22 17:35:23', '2019-09-22 20:35:23', '<!-- wp:paragraph -->\n<p> lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms  lorem ipsum bolado dms </p>\n<!-- /wp:paragraph -->', 'Alguma outra postagem', '', 'publish', 'closed', 'closed', '', 'alguma-outra-postagem', '', '', '2019-09-22 17:35:23', '2019-09-22 20:35:23', '', 0, 'http://localhost/Facelook/?post_type=blogs&#038;p=57', 0, 'blogs', '', 0),
+(58, 1, '2019-09-22 17:35:12', '2019-09-22 20:35:12', '', 'img-bonita-2', '', 'inherit', 'open', 'closed', '', 'img-bonita-2-2', '', '', '2019-09-22 17:35:12', '2019-09-22 20:35:12', '', 57, 'http://localhost/Facelook/wp-content/uploads/2019/09/img-bonita-2-1.jpg', 0, 'attachment', 'image/jpeg', 0);
 
 -- --------------------------------------------------------
 
@@ -395,7 +461,14 @@ CREATE TABLE `wp_terms` (
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 (1, 'Sem categoria', 'sem-categoria', 0),
-(2, 'Dono da poh@ toda', 'dono-da-poh-toda', 0);
+(2, 'Dono da poh@ toda', 'dono-da-poh-toda', 0),
+(3, 'Barba', 'barba', 0),
+(4, 'Cabelo &amp; Barba', 'cabelo-barba', 0),
+(5, 'Cabelo', 'cabelo', 0),
+(6, 'Pós', 'pos', 0),
+(7, 'alguma coisa', 'alguma-coisa', 0),
+(8, 'pintola', 'pintola', 0),
+(9, 'alguma coisa', 'alguma-coisa', 0);
 
 -- --------------------------------------------------------
 
@@ -415,7 +488,18 @@ CREATE TABLE `wp_term_relationships` (
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 (1, 1, 0),
-(25, 2, 0);
+(14, 9, 0),
+(25, 2, 0),
+(26, 3, 0),
+(31, 3, 0),
+(33, 2, 0),
+(33, 3, 0),
+(35, 4, 0),
+(36, 5, 0),
+(48, 6, 0),
+(49, 8, 0),
+(51, 7, 0),
+(56, 6, 0);
 
 -- --------------------------------------------------------
 
@@ -438,7 +522,14 @@ CREATE TABLE `wp_term_taxonomy` (
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 (1, 1, 'category', '', 0, 0),
-(2, 2, 'barber_category', '', 0, 1);
+(2, 2, 'barber_category', '', 0, 2),
+(3, 3, 'barber_category', '', 0, 3),
+(4, 4, 'barber_category', '', 0, 1),
+(5, 5, 'barber_category', '', 0, 1),
+(6, 6, 'produto_category', '', 0, 1),
+(7, 7, 'produto_category', '', 0, 1),
+(8, 8, 'category', '', 0, 1),
+(9, 9, 'blog_category', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -473,10 +564,10 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:1:{s:64:\"ca1f704ef377a4f1ca166b6050dbebf01ee9441a2ecbda9a631e810eafd0a076\";a:4:{s:10:\"expiration\";i:1569175043;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36\";s:5:\"login\";i:1567965443;}}'),
-(17, 1, 'wp_dashboard_quick_press_last_post_id', '17'),
-(18, 1, 'wp_user-settings', 'libraryContent=browse'),
-(19, 1, 'wp_user-settings-time', '1566760438');
+(16, 1, 'session_tokens', 'a:3:{s:64:\"ca1f704ef377a4f1ca166b6050dbebf01ee9441a2ecbda9a631e810eafd0a076\";a:4:{s:10:\"expiration\";i:1569175043;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36\";s:5:\"login\";i:1567965443;}s:64:\"1aae6db92db61d2820e61da517c01ee8d9f6e2c71e663fafa83e944933dedaef\";a:4:{s:10:\"expiration\";i:1569855226;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36\";s:5:\"login\";i:1568645626;}s:64:\"f97e47f558ab5f398128ddb7e0962529be7c16b2bf588573f97919de7de04847\";a:4:{s:10:\"expiration\";i:1569855262;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:115:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36\";s:5:\"login\";i:1568645662;}}'),
+(17, 1, 'wp_dashboard_quick_press_last_post_id', '53'),
+(18, 1, 'wp_user-settings', 'libraryContent=browse&widgets_access=on'),
+(19, 1, 'wp_user-settings-time', '1569172733');
 
 -- --------------------------------------------------------
 
@@ -633,19 +724,19 @@ ALTER TABLE `wp_links`
 -- AUTO_INCREMENT de tabela `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=222;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=322;
 
 --
 -- AUTO_INCREMENT de tabela `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT de tabela `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT de tabela `wp_termmeta`
@@ -657,13 +748,13 @@ ALTER TABLE `wp_termmeta`
 -- AUTO_INCREMENT de tabela `wp_terms`
 --
 ALTER TABLE `wp_terms`
-  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
-  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `wp_usermeta`
