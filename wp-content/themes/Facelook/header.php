@@ -13,7 +13,7 @@
     <!-- HEADER -->
     <header class="header">
     <!-- NAVEGAÇÃO -->
-        <nav class="wrapper header__menu">
+        <nav class="wrapper header__menu stroke">
             <!-- LOGO -->
             <h1 class="nav__brand">
                 <a class="brand" href="<?php home_url();?>/Facelook/home">

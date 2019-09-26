@@ -97,7 +97,7 @@
                     <!-- BOX BARBEIRO -->
             <?php
                 $barber_Query = new WP_Query();
-                $barber_Query->query('post_type=barbeiros'.'&paged='.$paged);
+                $barber_Query->query('posts_per_page=6&post_type=barbeiros&orderby=rand'.'&paged='.$paged);
             
                 if($barber_Query->have_posts()):
                     while($barber_Query->have_posts()):
@@ -106,14 +106,14 @@
     
                 <div class="imagemBarbeiro" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
                     <div class="conteudoBarbeiro">
-                            <h4 class="conteudoBarbeiro__titulo"><?php the_title();?></h4>
-                            <h5 class="conteudoBarbeiro__especialidade"><?php the_category(); ?></h5>
+                            <h4 class="conteudoBarbeiro__titulo"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h4>
+                            <h5 class="conteudoBarbeiro__especialidade"><?php echo get_the_term_list( $barber_Query->ID, 'barber_category', '', ', ' );?></h5>
                             <p class="conteudoBarbeiro__descricao"><?php the_excerpt();?></p>
                             <nav class="conteudoBarbeiro__social">
-                                <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                                <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
+                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-tw' ); ?>"><i class="fab fa-twitter"></i></a>
+                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-face' ); ?>"><i class="fab fa-facebook-f"></i></a>
+                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-insta' ); ?>"><i class="fab fa-instagram"></i></a>
+                                <a  class="redes__items" href="<?php echo rwmb_meta( 'facelook-loca' ); ?>"><i class="fas fa-map-marker-alt"></i></a>
                             </nav>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                 <div class="blog__postagem">
                     <!-- POST -->
                     <?php
-                    $wp_query->query('post_per_pages=3&post_type=blogs'.'&paged='.$paged);
+                    $wp_query->query('posts_per_page=3&post_type=blogs'.'&paged='.$paged);
                         if ($wp_query->have_posts()):
                             while($wp_query->have_posts()):
                                 $wp_query->the_post();

@@ -32,10 +32,6 @@
     font-weight: bold;
 }
 
-.menu__item:nth-child(1) {
-    color: #daa250;
-}
-
 .menu__item:nth-child(3) {
     margin-right: 10px;
 }
@@ -62,4 +58,40 @@
     background-size: 10px 10px;
     widows: 10px;
     height: 10px;
+}
+
+nav .nav__menu a,
+nav .nav__menu a:after,
+nav .nav__menu a:before {
+  transition: all .5s;
+
+}
+nav .nav__menu a:hover {
+  color: #daa250;
+}
+
+
+/* stroke */
+nav.stroke a{
+  position: relative;
+}
+
+nav.stroke .nav__menu a:after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #daa250;
+  height: 2px;
+}
+nav.stroke .nav__menu a:hover:after {
+  width: 100%;
+}
+
+nav.stroke .nav__menu a:last-child:hover:after {
+  width: 0;
 }

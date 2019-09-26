@@ -4,12 +4,13 @@
 
 .redes {
     width: 100%;
-    height: 60px;
     background-color: #daa250;
+    padding: 15px 0;
 }
 
 .redes__nav {
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -17,7 +18,6 @@
     font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
-    padding: 10px 10px;
 }
 
 /* ---------------------------
@@ -92,15 +92,6 @@
     margin: 0 10px;
 }
 
-.rodape__item:nth-child(1)::after {
-    content:'';
-    display: block;
-    width: 50px;
-    height: 2px;
-    background-color: #daa250;
-    margin-top: 5px;
-}
-
 .contato__items{
     font-size: 0.8rem;
     padding: 5px 0;
@@ -140,4 +131,38 @@
     padding-bottom: 20px;
     color: #666;
     font-size: 1.1rem;
+}
+
+/* EFEITOS MENU */
+
+.rodape__menu  a,
+.rodape__menu  a:after,
+.rodape__menu  a:before {
+  transition: all .5s;
+
+}
+.rodape__menu  a:hover {
+  color: #daa250;
+}
+
+
+/* Stroke */
+.rodape__menu a{
+  position: relative;
+}
+
+.rodape__menu a:after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #daa250;
+  height: 2px;
+}
+.rodape__menu a:hover:after {
+  width: 100%;
 }

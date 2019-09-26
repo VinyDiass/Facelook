@@ -2,7 +2,10 @@
 
 add_theme_support( 'post-thumbnails' ); 
 
-// REGISTRANDO POST TYPES
+
+// require get_template_directory() . '/post/cpts.php';
+
+//REGISTRANDO POST TYPES
 function register_post_types(){
 
 $def_posttype_args = array(
@@ -313,9 +316,87 @@ foreach ($posttypes as $posttype => $options) {
 	}
 
 	register_post_type($posttype, $args);
-
 }
 
 }
 
-add_action( 'init', 'register_post_types', 10 );
+add_action( 'init', 'register_post_types', 0 );
+
+
+
+
+
+
+
+
+function facelook_metaBarber( $meta_boxes ) {
+	$prefix = 'facelook-';
+
+	$meta_boxes[] = array(
+		'id' => 'geral',
+		'title' => esc_html__( 'Informações adicionais', 'facelook' ),
+		'post_types' => array('barbeiros' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'true',
+		'fields' => array(
+			array(
+				'id' => $prefix . 'face',
+				'type' => 'url',
+				'name' => esc_html__( 'Link Facebook', 'facelook' ),
+				'desc' => esc_html__( 'Link do facebook', 'facelook' ),
+				'placeholder' => esc_html__( 'Insira o link do facebook', 'facelook' ),
+			),
+			array(
+				'id' => $prefix . 'tw',
+				'type' => 'url',
+				'name' => esc_html__( 'Link twitter', 'facelook' ),
+				'desc' => esc_html__( 'Link do twitter', 'facelook' ),
+				'placeholder' => esc_html__( 'Insira o link do twitter', 'facelook' ),
+			),
+			array(
+				'id' => $prefix . 'insta',
+				'type' => 'url',
+				'name' => esc_html__( 'Link Instagram', 'facelook' ),
+				'desc' => esc_html__( 'Link do Instagram', 'facelook' ),
+				'placeholder' => esc_html__( 'Insira o link do Instagram', 'facelook' ),
+			),
+			array(
+				'id' => $prefix . 'loca',
+				'type' => 'url',
+				'name' => esc_html__( 'Link da Localização', 'facelook' ),
+				'desc' => esc_html__( 'Insira o link da localização do estabelecimento pegada no maps', 'facelook' ),
+				'placeholder' => esc_html__( 'Link da Localização do estabelecimento', 'facelook' ),
+			),
+		),
+	);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'facelook_metaBarber' );
+
+function facelook_metaProd( $meta_boxes ) {
+	$prefix = 'facelook-';
+
+	$meta_boxes[] = array(
+		'id' => 'geral',
+		'title' => esc_html__( 'Informações adicionais', 'facelook' ),
+		'post_types' => array( 'prods' ),
+		'context' => 'advanced',
+		'priority' => 'default',
+		'autosave' => 'true',
+		'fields' => array(
+				array(
+				'id' => $prefix . 'use',
+				'type' => 'textarea',
+				'name' => esc_html__( 'Como usar', 'facelook' ),
+				'desc' => esc_html__( 'Passo a passo de como utilizar', 'facelook' ),
+				'placeholder' => esc_html__( 'Insira o passo a passo', 'facelook' ),
+				'rows' => 20,
+				),
+			),
+		);
+
+	return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'facelook_metaProd' );

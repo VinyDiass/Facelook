@@ -117,6 +117,11 @@
     cursor: pointer;
 }
 
+.conteudo__imagem__produto a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .nome__produto {
     padding: 10px;
     font-weight: 300;
@@ -207,11 +212,10 @@ section.area__parceria {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
     color: #fff;
     background-color: #222222;
     text-align: center;
-    padding: 40px;
+    padding: 230px 40px;
     background-position: center;
     background-size: cover;
 }
@@ -251,12 +255,20 @@ section.area__parceria {
     padding: 40px;
 }
 
-.btn__parceria--transparente {
-    background-color: unset;
-    border: 2px solid;
+.btn--dourado {
+    background-color: #daa250;
+    border-radius: 0;
+    color: #fff;
 }
 
-.btn__parceria--laranja {
-    background-color: #daa250;
+.btn--transparente {
     border: none;
+    color: #fff;
+    justify-content: space-around;
+    border: 2px solid #fff;
+    border-radius: 0
+}
+
+.btn--dourado ,.btn--transparente {
+    margin-top: 20px;
 }

@@ -46,46 +46,7 @@
                             wp_reset_postdata();
                         endif;
                 ?>
-                <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
-                        <div class="conteudo__imagem__produto">
-                            <span>+</span>
-                        </div>
-                    </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
-                </div>
-                <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
-                        <div class="conteudo__imagem__produto">
-                            <span>+</span>
-                        </div>
-                    </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
-                </div>
-                <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
-                        <div class="conteudo__imagem__produto">
-                            <span>+</span>
-                        </div>
-                    </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
-                </div>
-                <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
-                        <div class="conteudo__imagem__produto">
-                            <span>+</span>
-                        </div>
-                    </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
-                </div>
-                <div class="box__produto">
-                    <div class="imagem__produto" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/moonlight.jpg);">
-                        <div class="conteudo__imagem__produto">
-                            <span>+</span>
-                        </div>
-                    </div>
-                    <h6 class="nome__produto">Pó descolorante moonlight</h6>
-                </div>
+                
             </section>
           </section>
         </section>
@@ -115,17 +76,17 @@
             </section>
         </section>
 
+    </main>
         <section class="area__parceria">
             <div class="container__parceria">
                 <h3>Parceria com a Mega do Brasil</h3>
-                <button class="btn__parceria--laranja">Visitar</button>
+                <a class="btn btn--dourado" href="">Visitar</a>
             </div>
             <div class="container__parceria container__parceria__background" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
                 <div class="conteudo__parceria__background">
                     <h3>Maior parceria de todos os tempos</h3>
-                    <button class="btn__parceria--transparente">Produtos <i class="far fa-eye"></i></button>
+                    <a class="btn btn--transparente" href="">Produtos <i class="far fa-eye"></i></a>
                 </div>
             </div>
         </section>
-    </main>
 <?php get_footer(); ?>

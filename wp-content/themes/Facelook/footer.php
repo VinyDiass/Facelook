@@ -22,7 +22,7 @@
                 </form>
             </div>
 
-            <nav class="rodape__menu">
+            <nav class="rodape__menu stroke">
                 <a class="rodape__item" href="<?php home_url(); ?>/Facelook/home">home</a>
                 <a class="rodape__item" href="">parceiros</a>
                 <a class="rodape__item" href="">produtos</a>

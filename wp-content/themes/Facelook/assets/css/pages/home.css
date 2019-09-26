@@ -331,6 +331,27 @@
     margin-top: 5px;
 }
 
+.conteudoBarbeiro__social a {
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.conteudoBarbeiro__social a:hover {
+    color: #b56d00;
+}
+
+.conteudoBarbeiro__especialidade a, .conteudoBarbeiro__titulo a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.conteudoBarbeiro__especialidade a:hover , .conteudoBarbeiro__titulo a:hover {
+    color: #b56d00;
+}
+
+
+
 /* ---------------------------
             NEWSLETTER
 -------------------------------- */

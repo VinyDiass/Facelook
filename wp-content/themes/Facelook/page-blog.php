@@ -29,7 +29,6 @@
 				<a href="<?php the_permalink(); ?>" class="link__post">Leia mais</a>
 			</div>
 			</div>
-			<hr class="divisoria--amarela divisorio__blog">
 
 			<?php
 						endwhile;
