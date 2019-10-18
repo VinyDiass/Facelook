@@ -7,24 +7,19 @@
 	}
 ?>
 
-<main class="wrapper__interna">
-	<header class="cabecalho__post">
-		<h1 class="titulo__post"><?php the_title(); ?></h1>
-		<h2 class="subtitulo__post">Aprenda a cuidar melhor do seu cabelo com dicas rápidas e caseiras para colocar em prática sua revolução capilar.</h2>
-		<h4 class="autor__post">Por <?php the_author();?>, Facelook</h4>
-		<div>
-			<h4 class="data__post"><?php The_date('d/m/Y'); ?></h4>
-			<nav>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-			</nav>
-		</div>
-		<hr class="divisoria--amarela">
-	</header>
-	<article class="artigo__post">
-		<figure class="banner__post" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);"></figure>
-		<?php the_content(); ?>
-	</article>
+<main class="wrapper">
+	<section class="artigo__wrapper">
+		<article class="artigo__box">
+			<header class="artigo__header">
+				<p class="artigo__autor"><?php the_author(); ?></p>
+				<span class="artigo__data"><?php the_date(); ?></span>
+			</header>
+			<div class="artigo__post">
+				<h2 class="artigo__titulo"><?php the_title();?></h2>
+				<img class="artigo__img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);" />
+				<p class="artigo__content"> <?php the_content(); ?> </p>
+			</div>
+		</article>
+	</section>
 </main>
 <?php get_footer(); ?>

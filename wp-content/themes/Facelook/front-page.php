@@ -110,10 +110,10 @@
                             <h5 class="conteudoBarbeiro__especialidade"><?php echo get_the_term_list( $barber_Query->ID, 'barber_category', '', ', ' );?></h5>
                             <p class="conteudoBarbeiro__descricao"><?php the_excerpt();?></p>
                             <nav class="conteudoBarbeiro__social">
-                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-tw' ); ?>"><i class="fab fa-twitter"></i></a>
-                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-face' ); ?>"><i class="fab fa-facebook-f"></i></a>
-                                <a class="redes__items" href="<?php echo rwmb_meta( 'facelook-insta' ); ?>"><i class="fab fa-instagram"></i></a>
-                                <a  class="redes__items" href="<?php echo rwmb_meta( 'facelook-loca' ); ?>"><i class="fas fa-map-marker-alt"></i></a>
+                                <a class="redes__items" href="<?php the_field('twitter'); ?>"><i class="fab fa-twitter"></i></a>
+                                <a class="redes__items" href="<?php the_field('facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
+                                <a class="redes__items" href="<?php the_field('instagram'); ?>"><i class="fab fa-instagram"></i></a>
+                                <a  class="redes__items" href="<?php the_field('localizacao'); ?>"><i class="fas fa-map-marker-alt"></i></a>
                             </nav>
                     </div>
                 </div>

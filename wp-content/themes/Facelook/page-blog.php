@@ -6,9 +6,9 @@
 
 	<main class="wrapper">
 		<header class="cabecalho__blog">
-			<h2 class="titulo__blog">Blog</h2>
+			<h2 class="titulo__blog">Veja as notícias mais recentes</h2>
 		</header>
-		<section class="area__post">
+		<section class="post__wrapper">
 
 		<?php
 			$wp_query = new WP_Query();
@@ -19,17 +19,16 @@
 					$wp_query->the_post();
 		?>
 
-			<div class="post">
-			<div class="thumb__post" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
-			<div class="content__post">
-				<h3 class="title__post"><?php the_title(); ?></h3>
-				<article class="excerpt__post">
-					<?php the_excerpt(); ?>
-				</article>
-				<a href="<?php the_permalink(); ?>" class="link__post">Leia mais</a>
-			</div>
-			</div>
+			<article class="blog__box">
 
+				<a href="<?php the_permalink(); ?>"><img class="blog__img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"/></a>
+				 
+				<div class="blog__content">
+					<a class="blog__titulo" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					<span class="blog__date"><?php the_date(); ?></span>
+					<p class="blog__resumo"><?php the_excerpt(); ?></p>
+				</div>
+			</article>
 			<?php
 						endwhile;
 				?>

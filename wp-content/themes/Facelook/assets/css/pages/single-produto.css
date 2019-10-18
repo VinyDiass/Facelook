@@ -19,14 +19,39 @@
 
 /* Informações do produto */
 
-.titulo__principal {
-    padding-bottom: 60px !important;
-}
-
 .titulo {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     padding: 20px 0;
 }
+
+.accordion label.titulo {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.check {
+    display: flex;
+}
+
+.accordion label::before {
+    content: '+';
+    font-size: 2rem;
+    display: inline-flex;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accordion input:checked ~ label::before {
+    content: '-';
+}
+
+
+
+
 
 .titulo__secundario {
     font-size: 1.5rem !important;
@@ -82,3 +107,24 @@
     height: 323px;
     border: 1px solid red;
 }
+
+
+
+/* Efeito accordion */
+
+.accordion__item {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s linear;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion input:checked ~ .accordion__item {
+    height: auto;
+    max-height: 900px;
+    transform: all;
+} 

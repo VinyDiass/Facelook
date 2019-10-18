@@ -4,26 +4,6 @@
           <header class="cabecalho__produtos" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/barbeiro.jpg);">
             <h2 class="titulo__produtos"> Todos os produtos </h2>
           </header>
-          <section class="container__produtos">
-            <aside class="filtro__produtos">
-                <h5>Filtros</h5>
-                <h4>Categorias</h4>
-                <hr>
-                <nav class="categorias__produtos">
-                    <a href="#">Pós</a>
-                    <a href="#">Shampoo & Condicionador</a>
-                    <a href="#">Cremes</a>
-                    <a href="#">Perfumes</a>
-                    <a href="#">Óleos</a>
-                </nav>
-                <h4>Linhas</h4>
-                <hr>
-                <nav class="categorias__produtos">
-                    <a href="#">Feminino</a>
-                    <a href="#">Masculino</a>
-                    <a href="#">Premium</a>
-                </nav>
-            </aside>
             <section class="area__produtos">
                     <?php
 
@@ -48,7 +28,6 @@
                 ?>
                 
             </section>
-          </section>
         </section>
 
         <section class="area__colecoes">

@@ -55,22 +55,21 @@
 }
 
 .area__produtos {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px;
     margin: 90px 20px 20px;
 }
 
 .box__produto {
-    width: 30%;
-    margin: 10px;
+    width: 25%;
+    margin: 30px;
     height: 250px;
 }
 
 .imagem__produto {
-    height: 90%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -125,8 +124,10 @@
 .nome__produto {
     padding: 10px;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
+    color: #daa250;
+
 }
 
 .cabecalho__colecoes {

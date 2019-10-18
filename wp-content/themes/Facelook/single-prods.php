@@ -33,19 +33,18 @@
 					endif;
 					?>
 
-					<h3 class="titulo titulo__secundario">Descrição</h3>
-					<div class="produto__parag">
-						<?php the_content()?>
+					<div class="accordion">
+						<input type="checkbox" checked id="check1" />
+						<label for="check1" class="titulo titulo__secundario">Descrição</label>
+						<div class="produto__parag accordion__item">
+							<?php the_content()?>
+						</div>
+						<p class="titulo__secundario accordion__item">Modo de Usar</p>
+						<div class="produto__parag accordion__item">
+							<?php the_field('use'); ?>
+						</div>
 					</div>
-					<h3 class="titulo titulo__secundario">Modo de Usar</h3>
-					<div class="produto__parag">
-						<ol>
-						<?php
-						echo rwmb_meta( 'facelook-use' ); 
-						
-						?>
-						</ol>
-					</div>
+
 					<a href="" class="btn produto__btn">Fazer pedido <i class="fab fa-whatsapp"></i></a>
 				</div>
 			</div>

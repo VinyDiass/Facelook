@@ -2,9 +2,6 @@
 
 add_theme_support( 'post-thumbnails' ); 
 
-
-// require get_template_directory() . '/post/cpts.php';
-
 //REGISTRANDO POST TYPES
 function register_post_types(){
 
@@ -368,6 +365,32 @@ function facelook_metaBarber( $meta_boxes ) {
 				'desc' => esc_html__( 'Insira o link da localização do estabelecimento pegada no maps', 'facelook' ),
 				'placeholder' => esc_html__( 'Link da Localização do estabelecimento', 'facelook' ),
 			),
+			array(
+					'id' => $prefix . 'tel',
+					'type' => 'text',
+					'name' => esc_html__( 'Telefone', 'facelook' ),
+					'desc' => esc_html__( 'Telefone ou Celular', 'facelook' ),
+					'placeholder' => esc_html__( 'Insira o Telefone ou Celular', 'facelook' ),
+				),
+				array(
+				'id' => $prefix . 'mail',
+				'name' => esc_html__( 'E-mail', 'facelook' ),
+				'type' => 'email',
+				'desc' => esc_html__( 'E-mail do individuo', 'facelook' ),
+				'placeholder' => esc_html__( 'Insira o E-mail', 'facelook' ),
+				),
+				array(
+					'id' => $prefix . 'iframe',
+					'type' => 'text',
+					'name' => esc_html__( 'Localização', 'facelook' ),
+					'desc' => esc_html__( 'Localização do individuo em iframe', 'facelook' ),
+					'placeholder' => esc_html__( 'Insira o iframe da localizacao', 'facelook' ),
+				),
+				array(
+				'id' => $prefix . 'html',
+				'type' => 'map',
+
+				),
 		),
 	);
 
@@ -394,6 +417,7 @@ function facelook_metaProd( $meta_boxes ) {
 				'placeholder' => esc_html__( 'Insira o passo a passo', 'facelook' ),
 				'rows' => 20,
 				),
+
 			),
 		);
 
