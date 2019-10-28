@@ -5,7 +5,7 @@
         <!-- AREA REDES SOCIAIS -->
         <div class="redes">
             <nav class="wrapper redes__nav">
-                <a class="redes__items" href=""><i class="fab fa-twitter"></i></a>
+                <a class="redes__items" href=""><i class="fab fa-whatsapp"></i></a>
                 <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
                 <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
@@ -30,8 +30,8 @@
 
             <div class="rodape__contato">
                 <h2 class="contatos">Contatos</h2>
-                <p class="contato__items rodape__endereco">R. Jonhson's Baby - 235</p>
-                <p class="contato__items rodape__tel">99999-9999</p>
+                <p class="contato__items rodape__endereco"><?php the_field('localiza-rdp'); ?></p>
+                <p class="contato__items rodape__tel"><?php the_field('telefone-contato'); ?></p>
             </div>
 
             <div class="rodape__copy wrapper">

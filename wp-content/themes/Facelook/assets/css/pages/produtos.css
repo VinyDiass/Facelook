@@ -1,5 +1,5 @@
 .cabecalho__produtos {
-    padding: 70px;
+    height: 30vh;
     display: flex;
     background-color: #eae0e0;
     background-repeat: no-repeat;
@@ -8,10 +8,10 @@
 }
 
 .titulo__produtos {
-    margin: 40px 40px 30px;
-    font-weight: 300;
+    margin: auto 0 auto 30px;
     font-size: 32px;
     color: #6c5431;
+    font-family: ubuntul;
 }
 
 .filtro__produtos {
@@ -72,7 +72,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 .imagem__produto::after {
@@ -141,6 +141,8 @@
     padding-left: 20px;
     font-size: 32px;
     border-left: 3px solid #daa250;
+    font-family: ubuntul;
+
 }
 
 .destaques__colecoes {
@@ -188,6 +190,11 @@
     transition: .3s;
 }
 
+.colecoes, .colecoes span {
+    font-family: ubuntul
+
+}
+
 .btn__colecoes:hover {
     padding: 15px;
     font-size: 25px;
@@ -223,7 +230,7 @@ section.area__parceria {
 
 .container__parceria h3 {
     font-size: 45px;
-    font-weight: 300;
+    font-family: ubuntul;
 }
 
 .container__parceria button {
@@ -237,6 +244,10 @@ section.area__parceria {
 
 .container__parceria__background {
     position: relative;
+}
+
+.container__parceria__background h3 {
+    font-family: ubuntul;
 }
 
 .container__parceria__background::after {
@@ -260,6 +271,7 @@ section.area__parceria {
     background-color: #daa250;
     border-radius: 0;
     color: #fff;
+    font-family: circular;
 }
 
 .btn--transparente {
@@ -268,8 +280,45 @@ section.area__parceria {
     justify-content: space-around;
     border: 2px solid #fff;
     border-radius: 0
+    font-family: circular;
 }
 
 .btn--dourado ,.btn--transparente {
     margin-top: 20px;
+}
+
+.filtros {
+    display: flex;
+    padding: 30px 0;
+}
+
+.opcao {
+    color: #999;
+    font-family: circular;
+    padding: 7px;
+    border: 0;
+    border-bottom:  1px solid #daa250;
+    cursor: pointer;
+    width: 200px;
+}
+
+.confirm {
+    padding: 0 10px;
+    border: none;
+    background-color: #daa250;
+    color: #fff;
+    font-family: ubuntul;
+    cursor: pointer;
+}
+
+
+
+
+/* Buscas */
+
+.busca__titulo {
+    font-family: ubuntul;
+    font-size: 1.6rem;
+    color: #daa250;
+    padding: 60px 0 0 0;
 }

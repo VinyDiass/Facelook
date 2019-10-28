@@ -19,30 +19,11 @@
 				<p class="barbeiro__info"><?php the_content(); ?></p>	
 				<div class="barbeiro__redes">
 					<a href="<?php the_field('facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
-					<a href="<?php the_field('twitter'); ?>"><i class="fab fa-twitter"></i></a>
+					<a href="<?php the_field('twitter'); ?>"><i class="fab fa-whatsapp"></i></i></a>
 					<a href="<?php the_field('instagram'); ?>"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
 		</div>
-
-		<!-- <section class="barbeiro__contato wrapper">
-			<h2>Contatos</h2>
-			<div class="contato__info">
-				<div class="contato__direto">
-					<p class="contato__item">
-						<i class="fas fa-phone-alt"></i> <span><?php the_field('telefone') ?></span>
-					</p>
-					<p class="contato__item">
-						<i class="fas fa-envelope"></i> <span><?php the_field('mail'); ?></span>
-					</p>
-				</div>
-				<div class="contato__localizacao">
-					<p class="contato__item">
-						<i class="fas fa-map-marker-alt"></i> <span><?php the_field('endereco'); ?></span>
-					</p>
-				</div>
-			</div>
-		</section> -->
 
 	</section>
 	<!-- Fim sessão de apresentação -->

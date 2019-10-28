@@ -4,11 +4,12 @@
 }
 
 .barbeiro__foto {
-	width: 360px;
+	width: 400px;
 	min-width: 200px;
-	height: 290px;
-	background-size: cover;
+	height: 330px;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .barbeiro__descricao {
@@ -18,19 +19,24 @@
 	line-height: 22px;
 }
 
-.barbeiro__info {
+.barbeiro__info ~ p{
+	font-family: circular;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .barbeiro__conteudo {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	padding: 30px 0;
 }
 
 .barbeiro__nome {
 	color: #daa250;
 	padding-bottom: 50px;
 	font-size: 2rem; 
+	font-family: ubuntul;
 }
 
 .barbeiro__contato {
@@ -78,6 +84,7 @@
 
 .contato__item span {
 	margin-left: 10px;
+	font-family: circular;
 }
 
 
@@ -92,6 +99,7 @@
 	color: #daa250;
 	padding: 0 0 80px 0;
 	font-size: 1.875rem;
+	font-family: ubuntul;
 }
 
 .localizacao__conteudo {
@@ -109,15 +117,5 @@
     margin-left: 15px;
     padding-left: 15px;
     border-left: 5px solid #daa250;
-}
-
-.localizacao__paragrafo::before {
-    /* content: ''; */
-    display: inline-block;
-    width: 5px;
-    left: 0;
-    top: 0;
-    height: 123px;
-    background: #daa250;
-    position: absolute;
+    font-family: circular;
 }

@@ -29,7 +29,7 @@
     margin-left: 35px;
     text-decoration: none;
     color: #444;
-    font-weight: bold;
+    font-family: circular;
 }
 
 .menu__item:nth-child(3) {
@@ -41,7 +41,8 @@
     border: 2px solid #daa250;
     border-radius: 5px;
     color: #daa250;
-    box-shadow: 0px 0px 10px #d6ba91;
+    /*box-shadow: 0px 0px 10px #d6ba91;*/
+    font-family: ubuntul;
 }
 
 .linguas__pt {
@@ -94,4 +95,51 @@ nav.stroke .nav__menu a:hover:after {
 
 nav.stroke .nav__menu a:last-child:hover:after {
   width: 0;
+}
+
+#chk {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+.show-menu-btn, .hide-menu-btn {
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  /*.show-menu-btn, .hide-menu-btn {
+    display: block;
+  }
+
+  .nav__menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    right: -100;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+
+  .menu__item {
+    display: block;
+    padding: 20px;
+  }
+
+  .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #chk:checked ~ .nav__menu {
+    right: 0;
+  }*/
 }
