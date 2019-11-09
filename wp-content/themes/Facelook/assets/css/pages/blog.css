@@ -39,6 +39,7 @@
 	color: #666;
 	font-size: 1rem;
 	line-height: 22px;
+	padding: 20px 0;
 }
 
 .blog__titulo {
@@ -53,4 +54,32 @@
 	display: block;
 	color: #999;
 	padding-bottom: 10px; 
+}
+
+ /* MEDIA QUERIES */
+
+ @media(max-width: 600px) {
+ 	.post__wrapper {
+ 		justify-content: center;
+ 	}
+
+ 	.blog__resumo ~ p {
+ 		padding: 20px 0;
+ 	}
+ }
+
+ @media(min-width: 600px) {
+   
+ }
+
+ @media(min-width: 768px) {
+    
+ }
+
+ @media (min-width: 992px) {
+
+ }
+
+@media (min-width: 1200px) {
+    
 }

@@ -18,7 +18,7 @@
 .brand {
     display: block;
     text-indent: -9999px;
-	background: url("../../icons/logo.svg") no-repeat;
+	background: url("../../icons/logos.png") no-repeat;
     width: 180px;
     height: 50px;
     background-size: 180px 50px;
@@ -71,75 +71,86 @@ nav .nav__menu a:hover {
   color: #daa250;
 }
 
-
-/* stroke */
-nav.stroke a{
-  position: relative;
-}
-
-nav.stroke .nav__menu a:after{
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #daa250;
-  height: 2px;
-}
-nav.stroke .nav__menu a:hover:after {
-  width: 100%;
-}
-
-nav.stroke .nav__menu a:last-child:hover:after {
-  width: 0;
-}
-
 #chk {
   position: absolute;
   visibility: hidden;
   z-index: -1111;
 }
-.show-menu-btn, .hide-menu-btn {
-  transition: 0.4s;
-  font-size: 30px;
+
+.menu__h {
+  visibility: hidden;
   cursor: pointer;
-  display: none;
 }
 
+
+
 /* MEDIA QUERIES */
-@media (max-width: 768px) {
-  /*.show-menu-btn, .hide-menu-btn {
-    display: block;
+@media (max-width: 992px) {
+  .header__menu {
+    position: relative;
+    display: block
+  }
+  .menu__h {
+    visibility: visible;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #daa250;
+    font-size: 30px;
   }
 
   .nav__menu {
-    position: fixed;
     width: 100%;
-    height: 100vh;
-    background-color: #333;
-    right: -100;
-    top: 0;
+    overflow: hidden;
+    max-height: 0;
     text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
+    transition: all .5s linear;
   }
-
-  .menu__item {
+  .nav__menu .menu__item {
     display: block;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+    width: 100%;
+    transition: all 1s;
   }
 
-  .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+  .nav__menu .menu__item:hover {
+    margin-left: 1.3em;
+    background-color: #fafafa;
   }
 
   #chk:checked ~ .nav__menu {
+    height: auto;
+    max-height: 900px;
+    transform: all;
+  }
+  .menu__btn {
+    margin: 0 auto 10px auto;
+  }
+}
+
+@media(min-width: 992px) {
+  nav.stroke a{
+  position: relative;
+  }
+
+  nav.stroke .nav__menu a:after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
     right: 0;
-  }*/
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #daa250;
+    height: 2px;
+  }
+  nav.stroke .nav__menu a:hover:after {
+    width: 100%;
+  }
+
+  nav.stroke .nav__menu a:last-child:hover:after {
+    width: 0;
+  }
 }

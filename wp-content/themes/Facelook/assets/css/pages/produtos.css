@@ -34,6 +34,20 @@
     color: #daa250;
 }
 
+.voltar {
+    font-size: 1.2rem;
+    color: #777;
+    text-decoration: none;
+}
+
+.area__prodgeral {
+    padding: 30px 0;
+}
+
+.listagem {
+    padding: 60px 0;
+}
+
 .categorias__produtos {
     display: flex;
     flex-direction: column;
@@ -64,7 +78,6 @@
 
 .box__produto {
     width: 25%;
-    margin: 30px;
     height: 250px;
 }
 
@@ -130,10 +143,17 @@
 
 }
 
+.perma__prod {
+    text-decoration: none;
+}
+
+/* COLEÇÕES */
+
 .cabecalho__colecoes {
     margin-top: 100px;
     padding: 30px 50px;
 }
+
 
 .cabecalho__colecoes h2 {
     display: block;
@@ -190,16 +210,20 @@
     transition: .3s;
 }
 
-.colecoes, .colecoes span {
-    font-family: ubuntul
+.colecoes {
+    font-family: ubuntul;
+    text-decoration: none;
+    color: #000;
+}
 
+.btn__colecoes:hover .colecoes {
+    color: #fff
 }
 
 .btn__colecoes:hover {
     padding: 15px;
     font-size: 25px;
     background-color: #000;
-    color: #fff;
     border: none;
     cursor: pointer;
     transition: .3s;
@@ -208,6 +232,8 @@
 .btn__colecoes span {
     font-size: 16px;
 }
+
+/* MEGA DO BRASIL */
 
 section.area__parceria {
     display: flex;
@@ -321,4 +347,84 @@ section.area__parceria {
     font-size: 1.6rem;
     color: #daa250;
     padding: 60px 0 0 0;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+ @media(max-width: 600px) {
+    .filtros {
+        justify-content: center;
+    }
+
+    .imagem__produto {
+        height: 25vh;
+    }
+
+    .box__produto {
+        width: 45%;
+    }
+
+    .nome__produto {
+        font-size: 0.8rem;
+    }
+
+    /* COLEÇÃO */
+    .destaques__colecoes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .destaque__colecoes {
+        height: 300px;
+        width: 100%;
+    }
+
+    .destaque__secundario__colecoes {
+        height: 300px;
+    }
+
+    .destaque__secundario__colecoes:first-child {
+        margin-bottom: 10px;
+    }
+
+    .destaques__secundarios__colecoes {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* PARCERIA COM A MEGA */
+    .area__parceria {
+        flex-wrap: wrap;
+    }
+
+    .container__parceria {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .container__parceria:first-child {
+        width: 100%;
+        flex-direction: column;
+    }
+ }
+
+ @media(min-width: 600px) {
+   
+ }
+
+ @media(min-width: 768px) {
+    
+ }
+
+ @media (min-width: 992px) {
+    
+ }
+
+@media (min-width: 1200px) {
+    
 }

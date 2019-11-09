@@ -110,7 +110,7 @@
                             <h5 class="conteudoBarbeiro__especialidade"><?php echo get_the_term_list( $barber_Query->ID, 'barber_category', '', ', ' );?></h5>
                             <p class="conteudoBarbeiro__descricao"><?php the_excerpt();?></p>
                             <nav class="conteudoBarbeiro__social">
-                                <a class="redes__items" href="<?php the_field('twitter'); ?>"><i class="fab fa-whatsapp"></i></a>
+                                <a class="redes__items" href="<?php the_field('wps'); ?>"><i class="fab fa-whatsapp"></i></a>
                                 <a class="redes__items" href="<?php the_field('facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
                                 <a class="redes__items" href="<?php the_field('instagram'); ?>"><i class="fab fa-instagram"></i></a>
                             </nav>
@@ -135,8 +135,9 @@
                     <p class="news__paragrafo">Envie-nos seu e-mail e fique por dentro de todas as novidades e receba promoções.</p>
                 </div>
                 <div class="news__form">
-                    <input type="text" name="newsletter" placeholder="Seu melhor e-mail">
-                    <button>Enviar</button>
+                   <input type="text" placeholder="Insira seu e-mail" name="email" />
+                   <button>Enviar</button>
+                   
                 </div>
             </div>
             </div>

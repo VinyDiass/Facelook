@@ -7,7 +7,7 @@
 	}
 ?>
 
-<main class="wrapper">
+<main class="wrapper__post">
 	<section class="artigo__wrapper">
 		<article class="artigo__box">
 			<header class="artigo__header">

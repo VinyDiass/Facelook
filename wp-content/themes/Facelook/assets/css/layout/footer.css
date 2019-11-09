@@ -20,6 +20,27 @@
     color: #fff;
 }
 
+.loc {
+    position: relative;
+}
+
+.footer__loc {
+    position: absolute;
+    width: 280px;
+    height: 200px;
+    right: 30px;
+    top: 60px;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    transition: all .4s;
+}
+
+.item__loc:hover .footer__loc {
+    display: block;
+    opacity: 1;
+}
+
 /* ---------------------------
             FOOTER
 -------------------------------- */
@@ -119,6 +140,9 @@
     font-family: circular;
 }
 
+.rodape__endereco, .rodape__tel {
+    font-family: circular;
+}
 /* EFEITOS MENU */
 
 .rodape__menu  a,

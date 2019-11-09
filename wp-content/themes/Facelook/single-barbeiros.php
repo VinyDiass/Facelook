@@ -19,7 +19,7 @@
 				<p class="barbeiro__info"><?php the_content(); ?></p>	
 				<div class="barbeiro__redes">
 					<a href="<?php the_field('facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
-					<a href="<?php the_field('twitter'); ?>"><i class="fab fa-whatsapp"></i></i></a>
+					<a href="<?php the_field('wps'); ?>"><i class="fab fa-whatsapp"></i></i></a>
 					<a href="<?php the_field('instagram'); ?>"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>

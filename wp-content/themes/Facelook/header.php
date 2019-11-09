@@ -25,6 +25,10 @@
             <label for="chk" class="show-menu-btn">
                 <i class="fas fa-ellipsis-h"></i>
             </label> -->
+            <input type="checkbox" id="chk" />
+            <label class="menu__h" for="chk">
+                <i class="fas fa-bars"></i>
+            </label>
 
             <!-- ITEMS MENU -->
             <div class="nav__menu">
@@ -32,9 +36,6 @@
                 <a class="menu__item" href="<?php home_url();?>/Facelook/produtos">Produtos</a>
                 <a class="menu__item" href="<?php home_url(); ?>/Facelook/blog">Blog</a>
                 <a class="btn menu__btn" href="<?php the_field('apidw'); ?>">Revender</a>
-                <label for="chk" class="hide-menu-btn">
-                    <i class="fas fa-times"></i>
-                </label>
             </div>
             <!-- MENU IDIOMAS -->
             <!-- <nav class="nav__linguas">

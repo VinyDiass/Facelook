@@ -6,11 +6,6 @@
     padding: 40px 0;
 }
 
-.artigo__box {
-    border: 1px solid #daa250;
-    box-shadow: 0px 0px 20px #ccc;
-}
-
 /* Cabeçalho postagem */
 
 .artigo__header {
@@ -73,4 +68,63 @@
     color: #daa250;
     padding: 30px 0;
     font-family: ubuntul;
+}
+
+/* MEDIA QUERIES */
+
+ @media(max-width: 600px) {
+    .artigo__titulo {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .wrapper__post {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .artigo__content ~ h2 {
+        text-align: center;
+    }
+
+    .artigo__content ~ p {
+        padding: 10px 15px;
+
+    }
+
+    .artigo__box {
+        border: none;
+        box-shadow: none;
+    }
+
+    .artigo__content ~ ul, .artigo__content ~ ol {
+        padding: 0px 30px; 
+    }
+
+    .artigo__img {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+ }
+
+ @media(min-width: 600px) {
+   .wrapper__post {
+    max-width: 1140px;
+    margin: 0 auto;
+   }
+ }
+
+ @media(min-width: 768px) {
+    
+ }
+
+ @media (min-width: 992px) {
+    .artigo__box {
+        border: 1px solid #daa250;
+        box-shadow: 0px 0px 20px #ccc;
+    }
+ }
+
+@media (min-width: 1200px) {
+    
 }

@@ -3,12 +3,12 @@
     <footer>
 
         <!-- AREA REDES SOCIAIS -->
-        <div class="redes">
+        <div class="redes loc">
             <nav class="wrapper redes__nav">
-                <a class="redes__items" href=""><i class="fab fa-whatsapp"></i></a>
-                <a class="redes__items" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="redes__items" href=""><i class="fab fa-instagram"></i></a>
-                <a  class="redes__items" href=""><i class="fas fa-map-marker-alt"></i></a>
+                <a class="redes__items" href=""https://api.whatsapp.com/send?1=pt_BR&phone=5511954965600><i class="fab fa-whatsapp"></i></a>
+                <a class="redes__items" href="https://www.facebook.com/facelookcosmeticosoficial/"><i class="fab fa-facebook-f"></i></a>
+                <a class="redes__items" href="https://www.instagram.com/facelookcosmeticosoficial/"><i class="fab fa-instagram"></i></a>
+                <a  class="redes__items item__loc"><i class="fas fa-map-marker-alt"><iframe class="footer__loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.00422356802!2d-46.743223485544846!3d-23.496357365078964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef931044a37cd%3A0xb42e819f798da5fc!2sR.%20Armando%20Martino%2C%20360%20-%20Parque%20Sao%20Domingos%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005127-000!5e0!3m2!1spt-BR!2sbr!4v1573089112397!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></i></a>
             </nav>
         </div>
 
@@ -30,8 +30,8 @@
 
             <div class="rodape__contato">
                 <h2 class="contatos">Contatos</h2>
-                <p class="contato__items rodape__endereco"><?php the_field('localiza-rdp'); ?></p>
-                <p class="contato__items rodape__tel"><?php the_field('telefone-contato'); ?></p>
+                <p class="contato__items rodape__endereco">Rua: Armando Martino, 360</p>
+                <p class="contato__items rodape__tel">(11) 95496-5600</p>
             </div>
 
             <div class="rodape__copy wrapper">

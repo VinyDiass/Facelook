@@ -54,7 +54,6 @@
 
 .header__title {
     text-transform: uppercase;
-    font-size: 18.75rem;
     color: #ececec;
     font-weight: 100;
     z-index: 0;
@@ -146,21 +145,9 @@
     flex-wrap: wrap;
 }
 
-.facelook__video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 540px;
-    position: relative;
-}
 
-.facelook__player {
-    position: absolute;
-}
-
-.video {
+iframe {
     border: 2px solid #daa250;
-    width: 100%;
 }
 
 .facelook__content {
@@ -193,17 +180,6 @@
     display: flex;
     align-items: center;
     position: relative;
-}
-
-.facelook__paragrafo::before {
-    /* content: ''; */
-    display: inline-block;
-    width: 5px;
-    left: 0;
-    top: 0;
-    height: 123px;
-    background: #daa250;
-    position: absolute;
 }
 
 .facelook__link {
@@ -540,8 +516,184 @@ i.far.fa-clock {
 }
 
 /* MEDIA QUERIES */
- @media (max-width: 768px) {
+ @media (max-width: 992px) {
     .slider{
         background-size: 0; 
     }
  }
+
+
+ /* MEDIA QUERIES */
+
+ @media(max-width: 600px) {
+    /* BANNER */
+    .sliderContent__title {
+        font-size: 2.5rem;
+    }
+
+    .sliderContent__text {
+        font-size: 1.2rem;
+    }
+
+    /* LINHAS */
+    .linhas {
+        padding: 80px 0;
+    }
+    .header__title {
+        font-size: 6rem;
+    }
+
+    .header__subtitle {
+        font-size: 1.4rem;
+    }
+
+    .linhas__cards {
+        justify-content: center;
+    }
+
+    /* CONHEÇA A FACELOOK */
+
+    iframe {
+        width: 340px;
+        height: 200px;
+    }
+
+    .facelook__video, .facelook__content {
+        margin: 0 auto;
+    }
+
+    .facelook__titulo {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .facelook__paragrafo {
+        border: none;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    
+    .facelook__link {
+        margin-left: auto;
+    }
+
+    /* LIGA DOS BARBERS */
+
+    .barber__titulo {
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .barber__paragrafo {
+        font-size: 1rem;
+        line-height: 22px;
+        margin: 0;
+    }
+
+    .barber__fotos {
+        justify-content: center;
+    }
+
+    /* NEWSLETTER */
+
+    .news__titulo {
+        font-size: 2.5rem;
+    }
+
+    .news__paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .news__form input {
+        width: 100%;
+    }
+
+    /* BLOG */
+    .blog__wrapper {
+        padding: 80px 0;
+    }
+
+    .blog__postagem {
+        justify-content: center;
+    }
+
+ }
+
+ @media(min-width: 600px) {
+    /* LINHAS */
+    .header__title {
+       font-size: 8rem;
+    }
+
+    .linhas__card {
+        margin: 40px auto;
+    }
+
+    /* CONHEÇA A FACELOOK */
+
+    iframe {
+        width: 440px;
+        height: 255px;
+    }
+
+    .facelook__titulo {
+        text-align: center;
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .facelook__link {
+        margin-left: auto;
+    }
+
+    .facelook__paragrafo {
+        border: none; 
+    }
+    .facelook__video, .facelook__content {
+        margin: 0 auto;
+    }
+ }
+
+ @media(min-width: 768px) {
+    /* LINHAS */
+    .header__title {
+        font-size: 10rem;
+    }
+
+    /* CONHEÇA A FACELOOK */
+    /*.facelook__paragrafo {
+        border-left: 5px solid #daa250;
+    }*/
+
+    /* BARBEIROS */
+    .barber__fotos {
+        justify-content: space-around;
+    }
+
+    /* BLOG */
+    .blog__postagem {
+        justify-content: space-around;
+    }
+ }
+
+ @media (min-width: 992px) {
+    /* LINHAS */
+    .header__title {
+        font-size: 13rem;
+    }
+    /* CONHEÇA A FACELOOK */
+    
+ }
+
+@media (min-width: 1200px) {
+    /* LINHAS */
+    .header__title {
+       font-size: 17rem;
+    }
+    /* CONHEÇA A FACELOOK */
+    .facelook__paragrafo {
+        border-left: 5px solid #daa250;
+    }
+}

@@ -4,6 +4,10 @@
 	width: 85%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn {
     display: inline-flex;
     text-decoration: none;

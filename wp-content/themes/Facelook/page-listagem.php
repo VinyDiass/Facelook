@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
             <section class="wrapper area__prodgeral">
+                <a class="voltar" href="<?php home_url();?>/Facelook/produtos">Voltar</a>
                 <h2 class="busca__titulo">Resultado de sua busca</h2>
-                    <div class="area__produtos">  
+                    <div class="area__produtos listagem">  
                         <?php
 
                         	$args = [
