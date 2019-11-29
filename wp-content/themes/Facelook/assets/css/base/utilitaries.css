@@ -26,20 +26,15 @@ html {
 
 @font-face {
     font-family: circular;
-    src: url("../../fonts/circular std book.woff");
-}
-
-@font-face {
-    font-family: ubuntub;
-    src: url("../../fonts/ubuntu-bold.woff");
+    src: url("../../fonts/circular-std-book.ttf") format('truetype');
 }
 
 @font-face {
     font-family: ubuntul;
-    src: url("../../fonts/ubuntu-light.woff");
+    src: url("../../fonts/ubuntu-light.ttf");
 }
 
 @font-face {
     font-family: ubi;
-    src: url("../fonts/Ubuntu-Regular.woff");
+    src: url("../fonts/Ubuntu-Regular.ttf");
 }

@@ -1,3 +1,3 @@
 <?php get_header(); ?>
- Não há nenhuma postagem
+não há postagens
 <?php get_footer(); ?>

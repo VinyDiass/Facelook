@@ -2,7 +2,7 @@
     <main class="wrapper">
         <section>
           <header class="cabecalho__produtos" id="product" style="background-image:url(<?php the_field('banner'); ?>);">
-            <h2 class="titulo__produtos"> Todos os produtos </h2>
+            <h2 class="titulo__produtos"> Todos os Produtos </h2>
           </header>
             <section class="area__prodgeral">
 
@@ -46,31 +46,6 @@
                     </div>
                 </section>
             </section>
-
-        <section class="area__colecoes">
-            <header class="cabecalho__colecoes">
-                <h2>Outras coleções</h2>
-            </header>
-            <section class="destaques__colecoes">
-                <div class="destaque__colecoes" style="background-image:url(<?php the_field('imgf');?>">
-                    <button class="btn__colecoes">
-                        <a class="colecoes" href="#product">Feminino</a>
-                    </button>
-                </div>
-                <div class="destaques__secundarios__colecoes">
-                    <div class="destaque__secundario__colecoes" style="background-image:url(<?php the_field('imgm') ?>);">
-                        <button class="btn__colecoes">
-                            <a class="colecoes" href="#product">Masculino</a>
-                        </button>
-                    </div>
-                    <div class="destaque__secundario__colecoes" style="background-image:url(<?php the_field('imgp') ?>);">
-                        <button class="btn__colecoes">
-                            <a class="colecoes" href="#product">Premium</a>
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </section>
 
     </main>
         <section class="area__parceria">

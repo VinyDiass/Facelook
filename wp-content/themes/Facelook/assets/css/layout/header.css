@@ -154,3 +154,11 @@ nav .nav__menu a:hover {
     width: 0;
   }
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+  .header__menu {
+    width: 100%;
+  }
+}

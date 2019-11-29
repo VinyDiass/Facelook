@@ -11,8 +11,12 @@
 		<section class="post__wrapper">
 
 		<?php
-			$wp_query = new WP_Query();
-			$wp_query->query('post_type=blogs'.'&paged='.$paged);
+			
+			//Protect against arbitrary paged values
+			$args = array(
+				'post_type'=> 'blogs',
+			);
+			$wp_query = new WP_Query($args);
 
 			if  ($wp_query-> have_posts()) :
 				while ($wp_query->have_posts()) :
@@ -29,18 +33,14 @@
 					<p class="blog__resumo"><?php the_excerpt(); ?></p>
 				</div>
 			</article>
-			<?php
-						endwhile;
-				?>
+			
+			<?php 
+				endwhile; 
 
-					<footer class="listagem__footer wrapper">
-						<?php next_posts_link('Proxima página <i class="fas fa-chevron-right text-green"></i>'); ?>
-						<?php previous_posts_link('<i class="fas fa-chevron-left text-green"></i> Página anterior ') ?>
-					</footer>
-				<?php
-					endif;
-					wp_reset_postdata();
-				?>
+				wp_reset_postdata();
+
+				endif;
+			?>
 
 		</section>
 	</main>

@@ -10,7 +10,7 @@
 .titulo__produtos {
     margin: auto 0 auto 30px;
     font-size: 32px;
-    color: #6c5431;
+    color: #e4bc81;
     font-family: ubuntul;
 }
 
@@ -73,7 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 90px 20px 20px;
+    /*margin: 90px 20px 20px;*/
 }
 
 .box__produto {
@@ -356,6 +356,13 @@ section.area__parceria {
 /* MEDIA QUERIES */
 
  @media(max-width: 600px) {
+
+    /* BANNER */
+    .titulo__produtos {
+        color: #bd8228;
+    }
+
+    /* PRODUTOS */
     .filtros {
         justify-content: center;
     }
@@ -379,14 +386,10 @@ section.area__parceria {
         flex-wrap: wrap;
     }
 
-    .destaque__colecoes {
+    .destaque__colecoes, .destaque__secundario__colecoes {
         height: 300px;
         width: 100%;
-    }
-
-    .destaque__secundario__colecoes {
-        height: 300px;
-    }
+    }f
 
     .destaque__secundario__colecoes:first-child {
         margin-bottom: 10px;

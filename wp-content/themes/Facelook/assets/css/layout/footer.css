@@ -80,25 +80,32 @@
     display: flex;
 }
 
-.novidades__input {
+.novidades__input--footer {
     height: 45px;
     border: 2px solid #daa250;
     font-size: 1rem;
     color: #666;
     text-indent: 15px;
+    max-width: 200px;
 }
 
-.novidades__input, .novidades__button {
+.novidades__input--footer, .novidades__button--footer {
     outline: 0;
 }
 
-.novidades__button {
+
+
+.novidades__button--footer {
     color: #fff;
     font-size: 1rem;
     background-color: #daa250;
     border: none;
-    padding: 0 30px;
+    padding: 0 25px;
     cursor: pointer;
+}
+
+.wpcf7-form p {
+    display: flex;
 }
 
 .rodape__menu {
@@ -175,4 +182,18 @@
 }
 .rodape__menu a:hover:after {
   width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 600px) {
+    .rodape {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .novidades__button {
+        padding: 0 20px;
+    }
 }

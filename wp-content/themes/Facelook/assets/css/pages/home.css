@@ -348,6 +348,29 @@ iframe {
             NEWSLETTER
 -------------------------------- */
 
+.novidades__input {
+    height: 45px;
+    border: 2px solid #daa250;
+    font-size: 1rem;
+    color: #666;
+    text-indent: 15px;
+}
+
+.novidades__input, .novidades__button {
+    outline: 0;
+}
+
+
+
+.novidades__button {
+    color: #fff;
+    font-size: 1rem;
+    background-color: #daa250;
+    border: none;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
 .news {
     background-color: #222;
 }
@@ -381,28 +404,6 @@ iframe {
     margin-top: 20px;
 }
 
-.news__form input {
-    font-size: 1.5rem;
-    height: 60px;
-    border: 2px solid #daa250;
-    color: #666;
-    text-indent: 15px;
-    font-family: circular;
-}
-
-.news__form input:focus, .news__form button {
-    outline: 0;
-}
-
-.news__form button {
-    font-size: 1.5rem;
-    background-color: #daa250;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 0 20px;
-    font-family: ubuntul;
-}
 
 /* ---------------------------
             BLOG
@@ -522,8 +523,75 @@ i.far.fa-clock {
     }
  }
 
+ @media(max-width: 375px) {
+    /* SLIDER */
 
- /* MEDIA QUERIES */
+    .sliderContent__title {
+        font-size: 2rem !important;
+    }
+
+    /* LINHAS */
+
+    .linhas {
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 5.5rem !important;
+    }
+
+
+    /* CONHEÇA A FACELOOK */
+
+    iframe {
+        width: 100%;
+        padding: 0 10px;
+        border: none;
+    }
+    .facelook__wrapper {
+        justify-content: space-around;
+        padding: 80px 0;
+    }
+
+    /* LIGA DOS BARBER */
+
+    .barber {
+        padding: 100px 0;
+    }
+
+    .barber__titulo {
+        text-align: center;
+    }
+
+    .barber__paragrafo {
+        font-size: 0.95rem !important;
+    }
+
+    .barber__wrapper {
+        width: 100%;
+        /*padding: 90px 0;*/
+    }
+    .barber__fotos {
+        width: 100%;
+    }
+
+    .imagemBarbeiro {
+        height: 50vh;
+        width: 50vh;
+    }
+
+    .conteudoBarbeiro {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* NEWSLETTER */
+
+    .news__form input {
+        font-size: 1rem;
+    }   
+
+ }
 
  @media(max-width: 600px) {
     /* BANNER */
@@ -553,6 +621,11 @@ i.far.fa-clock {
 
     /* CONHEÇA A FACELOOK */
 
+    .facelook__wrapper {
+        width: 100%;
+        padding: 90px 20px;
+    }
+
     iframe {
         width: 340px;
         height: 200px;
@@ -580,6 +653,10 @@ i.far.fa-clock {
     }
 
     /* LIGA DOS BARBERS */
+
+    .barber__wrapper {
+        width: 100%;
+    }
 
     .barber__titulo {
         font-size: 1.9rem;
@@ -619,9 +696,18 @@ i.far.fa-clock {
         justify-content: center;
     }
 
+    .blog__info, .blog__post::after {
+        width: 100%;
+        height: 100%;
+    }
+
  }
 
  @media(min-width: 600px) {
+
+    html {
+        overflow-x: hidden;
+    }
     /* LINHAS */
     .header__title {
        font-size: 8rem;

@@ -21,7 +21,7 @@
             <div class="wrapper linhas">
                 <header class="linhas__header">
                     <h2 class="header__title">Linhas</h2>
-                    <h3 class="header__subtitle">Veja nossa linha</h3>
+                    <h3 class="header__subtitle">Veja nossas linhas</h3>
                 </header>
                 <!-- AREA CARDS -->
                 <div class="linhas__cards">
@@ -110,7 +110,7 @@
                             <h5 class="conteudoBarbeiro__especialidade"><?php echo get_the_term_list( $barber_Query->ID, 'barber_category', '', ', ' );?></h5>
                             <p class="conteudoBarbeiro__descricao"><?php the_excerpt();?></p>
                             <nav class="conteudoBarbeiro__social">
-                                <a class="redes__items" href="<?php the_field('wps'); ?>"><i class="fab fa-whatsapp"></i></a>
+                                <a class="redes__items" href="https://api.whatsapp.com/send?1=pt_BR&phone=55<?php the_field('wps'); ?>"><i class="fab fa-whatsapp"></i></a>
                                 <a class="redes__items" href="<?php the_field('facebook'); ?>"><i class="fab fa-facebook-f"></i></a>
                                 <a class="redes__items" href="<?php the_field('instagram'); ?>"><i class="fab fa-instagram"></i></a>
                             </nav>
@@ -134,11 +134,16 @@
                     <h2 class="news__titulo">Novidades</h2>
                     <p class="news__paragrafo">Envie-nos seu e-mail e fique por dentro de todas as novidades e receba promoções.</p>
                 </div>
-                <div class="news__form">
+
+
+               <!--  <div class="news__form">
                    <input type="text" placeholder="Insira seu e-mail" name="email" />
                    <button>Enviar</button>
                    
                 </div>
+ -->
+    <?php echo do_shortcode('[contact-form-7 id="194" title="newsletter"]') ?> 
+
             </div>
             </div>
         </section>
