@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?></title>
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-    <script src="https://kit.fontawesome.com/837a87187f.js"></script>
     <?php wp_head(); ?>
+    <script src="https://kit.fontawesome.com/837a87187f.js"></script>
 </head>
 <body>
     <!-- HEADER -->
@@ -21,10 +20,6 @@
                 </a>
             </h1>
 
-            <!-- <input type="checkbox" id="chk">
-            <label for="chk" class="show-menu-btn">
-                <i class="fas fa-ellipsis-h"></i>
-            </label> -->
             <input type="checkbox" id="chk" />
             <label class="menu__h" for="chk">
                 <i class="fas fa-bars"></i>
@@ -35,15 +30,7 @@
                 <a class="menu__item" href="<?php home_url();?>/Facelook/home">Home</a>
                 <a class="menu__item" href="<?php home_url();?>/Facelook/produtos">Produtos</a>
                 <a class="menu__item" href="<?php home_url(); ?>/Facelook/blog">Blog</a>
-                <a class="btn menu__btn" href="<?php the_field('apidw'); ?>">Revender</a>
+                <a class="btn menu__btn" href="http://api.whatsapp.com/send?1=pt_BR&phone=55<?php the_field('apidw'); ?>">Revender</a>
             </div>
-            <!-- MENU IDIOMAS -->
-            <!-- <nav class="nav__linguas">
-                <a class="linguas__pt" href="#">PT</a>
-                <div>
-                    <a href=""></a>
-                    <a href=""></a>
-                </div>
-            </nav> -->
         </nav>
 	</header>

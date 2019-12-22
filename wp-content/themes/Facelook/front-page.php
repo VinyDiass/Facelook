@@ -10,8 +10,8 @@
             <div class="slider">
                 <div class="wrapper slider__content">
                     <h2 class="sliderContent__title">Melhores produtos do mundo dos cosméticos</h2>
-                    <p class="sliderContent__text"> Venha fazer uma parceria conosco tenha em mãos os melhres produtos </p>
-                    <a class="btn slider__btn" href="<?php the_field('apidw');?>">Revender</a>
+                    <p class="sliderContent__text"> Venha fazer uma parceria conosco tenha em mãos os melhores produtos </p>
+                    <a class="btn slider__btn" href="http://api.whatsapp.com/send?1=pt_BR&phone=55<?php the_field('apidw');?>">Revender</a>
                 </div>
             </div>
         </section>
@@ -71,7 +71,7 @@
                 <div class="facelook__content">
                     <h2 class="facelook__titulo">Conheça a facelook</h2>
                     <div class="content__barra">
-                        <p class="facelook__paragrafo">Surgimos em 2013 com o intuito de fazer a diferença no mercado de cosmeticos e nossa missão é disponibilizar os melhores produtos e aprimorar cada vez mais os nossos  serviços, gerando veiculos fortes e duradourosb com clientes e consumidores</p>
+                        <p class="facelook__paragrafo">Surgimos em 2013 com o intuito de fazer a diferença no mercado de cosméticos e nossa missão é disponibilizar os melhores produtos e aprimorar cada vez mais os nossos  serviços, gerando vinculos fortes e duradouros com clientes e consumidores.</p>
                     </div>
 
                     <a class="facelook__link" href="<?php the_field('vicanal'); ?>">
@@ -88,7 +88,7 @@
                 <header class="barber__cabecalho">
                     <h2 class="barber__titulo">Conheça a Liga dos Barber </h2>
                     <p class="barber__paragrafo">Nossa liga é formada pelos qualificados do ramo dos barbeiros.
-                        Juntos formamos a Liga dos Barbes, uma união de força e talento para disseminar a palavra
+                        Juntos formamos a Liga dos Barbers, uma união de força e talento para disseminar a palavra
                         do estilo e da moda.
                     </p>
                 </header>

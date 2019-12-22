@@ -516,6 +516,11 @@ i.far.fa-clock {
     font-family: ubuntul;
 }
 
+
+.wpcf7-mail-sent-ok {
+    color: #999;
+    font-family: circular;
+}
 /* MEDIA QUERIES */
  @media (max-width: 992px) {
     .slider{

@@ -1,5 +1,11 @@
 <?php
 
+function load_scripts() {
+	wp_enqueue_style('template', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0', 'all');
+}
+
+add_action( 'wp_enqueue_scripts', 'load_scripts' );
+
 add_action( 'admin_menu', 'remove_default_post_type' );
 
 function remove_default_post_type() {
@@ -281,17 +287,17 @@ $posttypes = array(
 
             'hierarchical'      => false,
             'labels'            => array(
-                'name'              => _( 'Tags'),
-                'singular_name'     => _( 'Tags'),
+                'name'              => _( 'Catehoria Mega'),
+                'singular_name'     => _( 'Categorias Mega'),
                 'search_items'      => __( 'Procurar' ),
-                'all_items'         => __( 'Tags' ),
-                'parent_item'       => __( 'Tag Pai' ),
-                'parent_item_colon' => __( 'Tag Pai:' ),
-                'edit_item'         => __( 'Editar Tag' ),
-                'update_item'       => __( 'Atualizar Tag' ),
-                'add_new_item'      => __( 'Nova Tag' ),
-                'new_item_name'     => __( 'Nova Tag' ),
-                'menu_name'         => __( 'Tags' ),
+                'all_items'         => __( 'Categorias Mega' ),
+                'parent_item'       => __( 'Mega Pai' ),
+                'parent_item_colon' => __( 'Mega Pai:' ),
+                'edit_item'         => __( 'Editar Categoria Mega' ),
+                'update_item'       => __( 'Atualizar Categoria Mega' ),
+                'add_new_item'      => __( 'Nova Categoria Mega' ),
+                'new_item_name'     => __( 'Nova Categoria Mega' ),
+                'menu_name'         => __( 'Categoria Mega' ),
             ),
 
             'show_ui'           => true,
